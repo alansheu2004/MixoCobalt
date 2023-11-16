@@ -1,0 +1,49 @@
+#! /bin/bash
+
+if [ $# -lt 2 ]; then
+        echo NOT ENOUGH ARGUMENTS
+        exit
+fi
+
+if [[ ! $2 =~ ^[0-9]+$ ]]; then
+	echo "${NUM} is not a number"
+	exit
+fi
+
+cwd=$(pwd)
+cd ~/MOM6_OBGC_examples/exps/OM4.single_column.COBALT
+
+sed -i "s/months = .*,/months = 12,/g" input.nml
+sed -i "s/days   = .*,/days   = 0,/g" input.nml
+sed -i "s/hours  = .*,/hours  = 0,/g" input.nml
+
+sed -i "s/input_filename = '.'/input_filename = 'n'/g" input.nml
+
+if [ $# -gt 2 ]; then
+	cobaltbuild
+else
+	cobaltbuildnoupdate
+fi
+cobaltrun
+cobaltexport "${1}1"
+
+sed -i "s/input_filename = '.'/input_filename = 'r'/g" input.nml
+cp -r INPUT INPUT_init
+
+for (( i=2; i<=$2; i++ ))
+do
+	rm -r INPUT
+	cp -r INPUT_init INPUT
+	cp -r RESTART/* INPUT
+	rm INPUT/coupler.res
+	cobaltrun
+	cobaltexport "${1}${i}"
+done
+
+rm -r INPUT
+cp -r INPUT_init INPUT
+rm -r INPUT_init
+
+sed -i "s/input_filename = '.'/input_filename = 'n'/g" input.nml
+
+cd $cwd

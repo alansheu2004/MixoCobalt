@@ -1,0 +1,7 @@
+#! /bin/bash
+
+cwd=$(pwd)
+cd ~/MOM6_OBGC_examples/exps/OM4.single_column.COBALT/
+source ../../builds/win11/gnu.env ; mpirun -n 1 ../../builds/build/win11-gnu/ocean_ice/prod/MOM6SIS2 |& tee stdout.win11.gnu.prod.n1
+cd $cwd
+

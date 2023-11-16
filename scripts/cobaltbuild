@@ -1,0 +1,9 @@
+#! /bin/bash
+
+cwd=$(pwd)
+cd ~/MOM6_OBGC_examples/builds/
+rm ../src/ocean_BGC/generic_tracers/generic_COBALT.F90
+cp /mnt/c/Users/me123/Documents/Github/ocean_BGC/generic_tracers/generic_COBALT.F90 ../src/ocean_BGC/generic_tracers/generic_COBALT.F90
+~/MOM6_OBGC_examples/builds/linux-build.bash -m win11 -p gnu -t prod -f mom6sis2
+cd $cwd
+

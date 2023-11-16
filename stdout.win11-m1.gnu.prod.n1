@@ -1,0 +1,21 @@
+
+FATAL: get_ascii_file_num_lines: File input.nml does not exist.
+
+
+FATAL: get_ascii_file_num_lines: File input.nml does not exist.
+
+#0  0x7fca79ee9ad0 in ???
+#1  0x55d4dc05fef9 in __mpp_mod_MOD_mpp_error_basic
+#2  0x55d4dc099714 in __mpp_mod_MOD_get_ascii_file_num_lines_and_length
+#3  0x55d4dc0ae204 in __mpp_mod_MOD_read_input_nml
+#4  0x55d4dc0b84b4 in __mpp_mod_MOD_mpp_init
+#5  0x55d4dbacaf08 in MAIN__
+#6  0x55d4dadf0b8e in main
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------

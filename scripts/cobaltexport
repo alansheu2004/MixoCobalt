@@ -1,0 +1,16 @@
+#! /bin/sh
+
+if [ $# -lt 1 ]; then
+	echo ADD EXPERIMENT TITLE
+	exit
+fi
+
+if [ -d "/mnt/c/Users/me123/Documents/Research/CobaltRuns/data/$1/" ]; then
+	echo EXPERIMENT ALREADY EXISTS! PLEASE RENAME
+	exit
+fi
+
+mkdir /mnt/c/Users/me123/Documents/Research/CobaltRuns/data/$1/
+cp ~/MOM6_OBGC_examples/exps/OM4.single_column.COBALT/*.nc /mnt/c/Users/me123/Documents/Research/CobaltRuns/data/$1/
+
+

@@ -1,0 +1,14 @@
+#! /bin/bash
+
+cwd=$(pwd)
+cd ~/MOM6_OBGC_examples/src/ocean_BGC/generic_tracers
+
+cobaltbuild
+
+for eps in {0..10}
+do
+	sed -i "s/call g_tracer_add_param('epsilon', mixo(1)%epsilon, .*)/call g_tracer_add_param('epsilon', mixo(1)%epsilon, 0.1\*$eps)/" generic_COBALT.F90
+	multiyear "$1${eps}year" 2
+done
+
+cd $cwd
