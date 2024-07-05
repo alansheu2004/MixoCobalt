@@ -340,6 +340,15 @@ nmx_src_var_record = 1
 nmx_src_var_gridspec = NONE
 nmx_valid_min = 0.0
 #
+psi_nmx_src_file = INPUT/init_ocean_cobalt.res.nc
+psi_nmx_src_var_name = psi_nmx
+psi_nmx_src_var_unit = none
+psi_nmx_dest_var_name =  nmx
+psi_nmx_dest_var_unit = mol kg-1
+psi_nmx_src_var_record = 1
+psi_nmx_src_var_gridspec = NONE
+psi_nmx_valid_min = 0.0
+#
 nsmz_src_file = INPUT/init_ocean_cobalt.res.nc
 nsmz_src_var_name = nsmz
 nsmz_src_var_unit = none

@@ -1378,7 +1378,7 @@
     ! units: psu m s-1
     ! cell_methods: xh:mean yh:mean zi:point area:mean
     ! variants: {Sflx_dia_diff,Sflx_dia_diff_xyave}
-"MLD_003"  [Unused] (CMOR equivalent is "mlotst")
+"MLD_003"  [Used] (CMOR equivalent is "mlotst")
     ! modules: {ocean_model,ocean_model_d2}
     ! long_name: Mixed layer depth (delta rho = 0.03)
     ! units: m
@@ -2341,6 +2341,103 @@
     ! units: m s-1
     ! cell_methods: xh:mean yh:mean zl:sum area:mean
     ! variants: {vert_remap_h_tendency,vert_remap_h_tendency_xyave}
+"psi_nmx"  [Used]
+    ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
+    ! long_name: Mixotroph Autotrophic Nitrogen
+    ! units: mol/kg
+    ! cell_methods: xh:mean yh:mean zl:mean area:mean
+    ! variants: {psi_nmx,psi_nmx_xyave}
+"psi_nmx_taup1"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
+    ! long_name: Mixotroph Autotrophic Nitrogen at taup1
+    ! units: mol/kg
+    ! cell_methods: xh:mean yh:mean zl:mean area:mean
+    ! variants: {psi_nmx_taup1,psi_nmx_taup1_xyave}
+"psi_nmx_aux"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
+    ! long_name: psi_nmx_aux
+    ! units: mol/kg
+    ! cell_methods: xh:mean yh:mean zl:mean area:mean
+    ! variants: {psi_nmx_aux,psi_nmx_aux_xyave}
+"psi_nmx_vmove"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
+    ! long_name: vertical movement
+    ! units: m/s
+    ! cell_methods: xh:mean yh:mean zl:mean area:mean
+    ! variants: {psi_nmx_vmove,psi_nmx_vmove_xyave}
+"psi_nmx_vdiffuse_impl"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
+    ! long_name: Implicit vertical diffusion of psi_nmx
+    ! units: mole/m^2/s
+    ! cell_methods: xh:mean yh:mean zl:mean area:mean
+    ! variants: {psi_nmx_vdiffuse_impl,psi_nmx_vdiffuse_impl_xyave}
+"psi_nmx_tendency"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
+    ! long_name: Generic tracer tendency of psi_nmx
+    ! units: mole/m^2/s
+    ! cell_methods: xh:mean yh:mean zl:mean area:mean
+    ! variants: {psi_nmx_tendency,psi_nmx_tendency_xyave}
+"psi_nmx_vdiff"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
+    ! long_name: random movement
+    ! units: m/s
+    ! cell_methods: xh:mean yh:mean zl:mean area:mean
+    ! variants: {psi_nmx_vdiff,psi_nmx_vdiff_xyave}
+"psi_nmx_stf"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_d2}
+    ! long_name: Total flux of psi_nmx into Ocean Surface
+    ! units: mole/m^2/sec
+    ! cell_methods: xh:mean yh:mean area:mean
+"psi_nmx_stf_gas"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_d2}
+    ! long_name: Gas exchange flux of psi_nmx into Ocean Surface
+    ! units: mole/m^2/sec
+    ! cell_methods: xh:mean yh:mean area:mean
+"psi_nmx_stf_gas_aux"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_d2}
+    ! long_name: Auxilliary Gas exchange flux of psi_nmx into Ocean Surface
+    ! units: mole/m^2/sec
+    ! cell_methods: xh:mean yh:mean area:mean
+"psi_nmx_deltap"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_d2}
+    ! long_name: Ocn minus Atm pressure of psi_nmx
+    ! units: uatm
+    ! cell_methods: xh:mean yh:mean area:mean
+"psi_nmx_kw"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_d2}
+    ! long_name: Gas Exchange piston velocity for psi_nmx
+    ! units: m/sec
+    ! cell_methods: xh:mean yh:mean area:mean
+"psi_nmx_btf"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_d2}
+    ! long_name: Total flux of psi_nmx into Ocean Bottom
+    ! units: mole/m^2/sec
+    ! cell_methods: xh:mean yh:mean area:mean
+"psi_nmx_btm_reservoir"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_d2}
+    ! long_name: Bottom reservoir of psi_nmx
+    ! units: mol/kg
+    ! cell_methods: xh:mean yh:mean area:mean
+"psi_nmx_trunoff"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_d2}
+    ! long_name: River concentration of psi_nmx
+    ! units: mol/kg
+    ! cell_methods: xh:mean yh:mean area:mean
+"psi_nmx_alpha"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_d2}
+    ! long_name: Atmospheric saturation for psi_nmx
+    ! units: mol/kg
+    ! cell_methods: xh:mean yh:mean area:mean
+"psi_nmx_csurf"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_d2}
+    ! long_name: Ocean surface gas concentration of psi_nmx
+    ! units: mol/kg
+    ! cell_methods: xh:mean yh:mean area:mean
+"psi_nmx_sc_no"  [Unused]
+    ! modules: {generic_cobalt,generic_cobalt_d2}
+    ! long_name: Ocean surface Schmidt Number for psi_nmx
+    ! units: mol/kg
+    ! cell_methods: xh:mean yh:mean area:mean
 "nh3"  [Unused]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: NH3
@@ -8241,6 +8338,18 @@
     ! units: mol m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jprod_nmx_auto,jprod_nmx_auto_xyave}
+"jprod_nmx_auto_spec"  [Used]
+    ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
+    ! long_name: Mixotroph Specialized Primary Nitrogen production layer integral
+    ! units: mol m-2 s-1
+    ! cell_methods: xh:mean yh:mean zl:mean area:mean
+    ! variants: {jprod_nmx_auto_spec,jprod_nmx_auto_spec_xyave}
+"jprod_nmx_hetero_spec"  [Used]
+    ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
+    ! long_name: Mixotroph Specialized Secondary Nitrogen production layer integral
+    ! units: mol m-2 s-1
+    ! cell_methods: xh:mean yh:mean zl:mean area:mean
+    ! variants: {jprod_nmx_hetero_spec,jprod_nmx_hetero_spec_xyave}
 "jprod_nmx_hetero"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Secondary Production of new biomass (nitrogen) by mixotrophs, layer integral
@@ -11547,36 +11656,42 @@
     ! units: mol m-2 s-1
     ! cell_methods: xh:mean yh:mean area:mean
     ! variants: {fbddtalk_raw,fbddtalk}
-"mx_jingest_n_sm"  [Used]
+"jingest_mx_n_sm"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Mixotroph Consumption of Sm. Phytoplankton
     ! units: mol m-3 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
-    ! variants: {mx_jingest_n_sm,mx_jingest_n_sm_xyave}
-"mx_jingest_n_bact"  [Used]
+    ! variants: {jingest_mx_n_sm,jingest_mx_n_sm_xyave}
+"jingest_mx_n_bact"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Mixotroph Consumption of Bacteria
     ! units: mol m-3 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
-    ! variants: {mx_jingest_n_bact,mx_jingest_n_bact_xyave}
-"smz_jingest_n_bact"  [Used]
+    ! variants: {jingest_mx_n_bact,jingest_mx_n_bact_xyave}
+"jingest_smz_n_bact"  [Unused]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Sm. Zooplankton Consumption of Bacteria
     ! units: mol m-3 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
-    ! variants: {smz_jingest_n_bact,smz_jingest_n_bact_xyave}
-"smz_jingest_n_mx"  [Used]
+    ! variants: {jingest_smz_n_bact,jingest_smz_n_bact_xyave}
+"jingest_smz_n_mx"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Sm. Zooplankton Consumption of Mixotrophs
     ! units: mol m-3 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
-    ! variants: {smz_jingest_n_mx,smz_jingest_n_mx_xyave}
-"smz_jingest_n_sm"  [Used]
+    ! variants: {jingest_smz_n_mx,jingest_smz_n_mx_xyave}
+"jingest_smz_n_sm"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Sm. Zooplankton Consumption of Sm. Phytoplankton
     ! units: mol m-3 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
-    ! variants: {smz_jingest_n_sm,smz_jingest_n_sm_xyave}
+    ! variants: {jingest_smz_n_sm,jingest_smz_n_sm_xyave}
+"psi_mx"  [Used]
+    ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
+    ! long_name: Mixotroph Preference Parameter
+    ! units: 1
+    ! cell_methods: xh:mean yh:mean zl:mean area:mean
+    ! variants: {psi_mx,psi_mx_xyave}
 "fgcfc11"  [Unused]
     ! modules: {generic_cfc,generic_cfc_d2}
     ! long_name: Surface Downward CFC11 flux
