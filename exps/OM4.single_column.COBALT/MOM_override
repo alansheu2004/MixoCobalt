@@ -74,4 +74,7 @@ GENERIC_TRACER_IC_FILE = "MOM_GENERICS.res.nc"
 #override DIAG_COORDS = "z 01 ZSTAR,zsfc 02 ZSTAR"
 #override DIAG_COORD_DEF_01 = "WOA09"
 #override DIAG_COORD_DEF_02 = "UNIFORM:10,500."
-
+#override RESTORE_SALINITY = True
+#override RESTORE_TEMPERATURE = True
+#override SALT_RESTORE_FILE = "INPUT/salt_restore_woa13_decav_HOT.nc"
+#override SST_RESTORE_FILE = "INPUT/temp_restore_woa13_decav_HOT.nc"
