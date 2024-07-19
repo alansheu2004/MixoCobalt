@@ -1,0 +1,11 @@
+#! /bin/sh
+
+if [ $# -lt 1 ]; then
+	echo ADD SITE NAME
+	exit
+fi
+
+inputpath=~/MOM6_OBGC_examples/exps/OM4.single_column.COBALT/INPUT/ocean_hgrid.nc
+
+rm $inputpath
+ln -s ~/MOM6_OBGC_examples/exps/datasets/OM4_025.JRA.single_column/ocean_hgrid_$1.nc $inputpath
