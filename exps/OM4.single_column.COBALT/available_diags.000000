@@ -9106,7 +9106,7 @@
     ! units: W m-2
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {irr_inst,irr_inst_xyave}
-"irr_mix"  [Unused]
+"irr_mix"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Light averaged over mixing layer
     ! units: W m-2
@@ -10384,7 +10384,7 @@
     ! units: mol m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jo2_plus_btm,jo2_plus_btm_xyave}
-"temp"  [Unused] (CMOR equivalent is "thetao")
+"temp"  [Used] (CMOR equivalent is "thetao")
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Potential Temperature
     ! units: Celsius

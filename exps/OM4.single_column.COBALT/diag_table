@@ -84,7 +84,7 @@ OM4_single_column
  "generic_cobalt","nsm",                "nsm",                "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","nlg",                "nlg",                "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","ndi",                "ndi",                "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","nmx",                "nmx",                "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","nmx",                "nmx",                "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","nsmz",               "nsmz",               "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","nmdz",               "nmdz",               "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","nlgz",               "nlgz",               "ocean_cobalt_tracers_daily","all","mean","none",2
@@ -92,41 +92,44 @@ OM4_single_column
  "generic_cobalt","mu_Sm",              "mu_Sm",              "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","mu_Lg",              "mu_Lg",              "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","mu_Di",              "mu_Di",              "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","mu_Mx",              "mu_Mx",              "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","mu_Mx",              "mu_Mx",              "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jzloss_n_Sm",        "jzloss_n_Sm",        "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jzloss_n_Lg",        "jzloss_n_Lg",        "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jzloss_n_Di",        "jzloss_n_Di",        "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","jzloss_n_Mx",        "jzloss_n_Mx",        "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","jzloss_n_Mx",        "jzloss_n_Mx",        "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jzloss_n_Smz",       "jzloss_n_Smz",       "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jzloss_n_Mdz",       "jzloss_n_Mdz",       "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jzloss_n_Lgz",       "jzloss_n_Lgz",       "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jingest_n_Smz",      "jingest_n_Smz",      "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jingest_n_Mdz",      "jingest_n_Mdz",      "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jingest_n_Lgz",      "jingest_n_Lgz",      "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","jingest_n_Mx",       "jingest_n_Mx",       "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","jingest_n_Mx",       "jingest_n_Mx",       "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","no3_raw",            "no3_raw",            "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","nh4_raw",            "nh4_raw",            "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","po4_raw",            "po4_raw",            "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","pp_raw",             "pp_raw",             "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","ppmixo_raw",         "ppmixo_raw",         "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","jprod_nbact",        "jprod_nbact",        "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","jprod_nmx_auto",     "jprod_nmx_auto",     "ocean_cobalt_tracers_daily","all","mean","none",2  
-# "generic_cobalt","jprod_nmx_hetero",   "jprod_nmx_hetero",   "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","jprod_nmx_auto_spec","jprod_nmx_auto_spec","ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","jprod_nmx_hetero_spec","jprod_nmx_hetero_spec","ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","ppmixo_raw",         "ppmixo_raw",         "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","jprod_nbact",        "jprod_nbact",        "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","jprod_nmx_auto",     "jprod_nmx_auto",     "ocean_cobalt_tracers_daily","all","mean","none",2  
+ "generic_cobalt","jprod_nmx_hetero",   "jprod_nmx_hetero",   "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","jprod_nmx_auto_spec","jprod_nmx_auto_spec","ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","jprod_nmx_hetero_spec","jprod_nmx_hetero_spec","ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jprod_nsmp",         "jprod_nsmp",         "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jprod_nlgp",         "jprod_nlgp",         "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jprod_ndi",          "jprod_ndi",          "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jprod_nsmz",         "jprod_nsmz",         "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jprod_nmdz",         "jprod_nmdz",         "ocean_cobalt_tracers_daily","all","mean","none",2
  "generic_cobalt","jprod_nlgz",         "jprod_nlgz",         "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","jingest_mx_n_sm",    "jingest_mx_n_sm",    "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","jingest_mx_n_bact",  "jingest_mx_n_bact",  "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","jingest_smz_n_sm",   "jingest_smz_n_sm",   "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","jingest_smz_n_mx",   "jingest_smz_n_mx",   "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","smz_jingest_n_bact", "jingest_smz_n_bact", "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","psi_mx",             "psi_mx",             "ocean_cobalt_tracers_daily","all","mean","none",2
-# "generic_cobalt","psi_nmx",            "psi_nmx",            "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","jingest_mx_n_sm",    "jingest_mx_n_sm",    "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","jingest_mx_n_bact",  "jingest_mx_n_bact",  "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","jingest_smz_n_sm",   "jingest_smz_n_sm",   "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","jingest_smz_n_mx",   "jingest_smz_n_mx",   "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","smz_jingest_n_bact", "jingest_smz_n_bact", "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","psi_mx",             "psi_mx",             "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","psi_nmx",            "psi_nmx",            "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","thetao",             "thetao",             "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","irr_mix",            "irr_mix",            "ocean_cobalt_tracers_daily","all","mean","none",2
+ "generic_cobalt","so",                 "so",                 "ocean_cobalt_tracers_daily","all","mean","none",2
 #===================
 # Generic COBALT surface fields:
 #==================

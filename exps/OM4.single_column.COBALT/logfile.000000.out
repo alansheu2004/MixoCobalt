@@ -6,7 +6,7 @@ READ_INPUT_NML: unknown
 READ_INPUT_NML: input.nml 
   &MOM_input_nml
           output_directory = '.',
-          input_filename = 'n'
+          input_filename = 'r'
           restart_input_dir = 'INPUT',
           restart_output_dir = 'RESTART',
           parameter_filename = 'MOM_input',
@@ -16,7 +16,7 @@ READ_INPUT_NML: input.nml
  
   &SIS_input_nml
          output_directory = './',
-         input_filename = 'n'
+         input_filename = 'r'
          restart_input_dir = 'INPUT/',
          restart_output_dir = 'RESTART/',
          parameter_filename = 'SIS_input',
@@ -27,7 +27,7 @@ READ_INPUT_NML: input.nml
  /
  
   &coupler_nml
-             months = 1,
+             months = 12,
              days   = 0,
              hours  = 0,
              current_date = 2004,1,1,0,0,0,
@@ -215,7 +215,7 @@ unknown
  CURRENT_DATE=2004       , 2*1          , 3*0          ,
  CALENDAR="julian           ",
  FORCE_DATE_FROM_NAMELIST=T,
- MONTHS=1          ,
+ MONTHS=12         ,
  DAYS=0          ,
  HOURS=0          ,
  MINUTES=0          ,
@@ -627,7 +627,6 @@ MOM_MOSAIC domain decomposition:     1 X    1
   MOM_initialize_rotation ROTATION: 2omegasinlat
   set_rotation_planetary OMEGA: 0.0
   initialize_grid_rotation_angle GRID_ROTATION_ANGLE_BUGS: False
-  write_ocean_geometry_file PARALLEL_RESTARTFILES: False
 hor_grid: unknown
   hor_grid NIBLOCK: 1
   hor_grid NJBLOCK: 1
@@ -672,25 +671,6 @@ SIS_diag_mediator: unknown
 
 ice_nohalo domain decomposition:     1 X    1
    pe,   is,  ie,  js,  je,    isd, ied, jsd, jed
-  SIS_state_initialization CONCENTRATION_INIT_CONFIG: data_override
-  SIS_state_initialization ICE_THICKNESS_INIT_CONFIG: data_override
-  SIS_state_initialization SNOW_THICKNESS_INIT_CONFIG: data_override
-&DATA_OVERRIDE_NML
- DEBUG_DATA_OVERRIDE=F,
- GRID_CENTER_BUG=F,
- REPRODUCE_NULL_CHAR_BUG=F,
- /
-&DATA_OVERRIDE_NML
- DEBUG_DATA_OVERRIDE=F,
- GRID_CENTER_BUG=F,
- REPRODUCE_NULL_CHAR_BUG=F,
- /
-  SIS_state_initialization ICE_SALINITY_INIT_CONFIG: uniform
-  SIS_state_initialization ICE_ENTHALPY_INIT_CONFIG: uniform_temp
-  SIS_state_initialization SNOW_ENTHALPY_INIT_CONFIG: uniform_temp
-  SIS_state_initialization ICE_SALINITY_IC: 4.0
-  SIS_state_initialization ICE_TEMPERATURE_IC: -4.0
-  SIS_state_initialization ICE_TEMPERATURE_IC: -4.0
 SIS_slow_thermo: unknown
   SIS_slow_thermo SPECIFIED_ICE: False
   SIS_slow_thermo DO_RIDGING: False
@@ -1069,37 +1049,13 @@ MOM_state_initialization: unknown
   MOM_state_initialization DEBUG: False
   MOM_state_initialization DEBUG_OBC: False
   MOM_state_initialization INPUTDIR: INPUT
-  MOM_state_initialization INIT_LAYERS_FROM_Z_FILE: True
-MOM_initialize_layers_from_Z: unknown
   MOM_initialize_layers_from_Z INPUTDIR: INPUT
   MOM_initialize_layers_from_Z REENTRANT_X: True
   MOM_initialize_layers_from_Z TRIPOLAR_N: False
-  MOM_initialize_layers_from_Z TEMP_SALT_Z_INIT_FILE:
-  MOM_initialize_layers_from_Z TEMP_Z_INIT_FILE: woa13_decav_ptemp_monthly_fulldepth_01.nc
-  MOM_initialize_layers_from_Z SALT_Z_INIT_FILE: woa13_decav_s_monthly_fulldepth_01.nc
-  MOM_initialize_layers_from_Z Z_INIT_FILE_PTEMP_VAR: ptemp_an
-  MOM_initialize_layers_from_Z Z_INIT_FILE_SALT_VAR: s_an
-  MOM_initialize_layers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_layers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_layers_from_Z Z_INIT_REMAPPING_SCHEME: PPM_IH4
-  MOM_initialize_layers_from_Z Z_INIT_REMAP_GENERAL: False
-  MOM_initialize_layers_from_Z Z_INIT_REMAP_FULL_COLUMN: False
-  MOM_initialize_layers_from_Z Z_INIT_REMAP_OLD_ALG: True
   MOM_initialize_layers_from_Z DEFAULT_2018_ANSWERS: False
   MOM_initialize_layers_from_Z TEMP_SALT_INIT_VERTICAL_REMAP_ONLY: False
   MOM_initialize_layers_from_Z REMAPPING_2018_ANSWERS: False
   MOM_initialize_layers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_layers_from_Z REGRIDDING_COORDINATE_MODE: Z*
-  MOM_initialize_layers_from_Z INPUTDIR: INPUT
-  MOM_initialize_layers_from_Z REGRIDDING_COORDINATE_UNITS: m
-  MOM_initialize_layers_from_Z ALE_COORDINATE_CONFIG: FNC1:2,6500,6,.01
-  MOM_initialize_layers_from_Z !ALE_RESOLUTION: 11*2.0, 2*2.01, 2.02, 2.03, 2.04, 2.06, 2.08, 2.12, 2.16, 2.22, 2.3, 2.4, 2.52, 2.67, 2.85, 3.08, 3.35, 3.6799999999999997, 4.08, 4.54, 5.1, 5.75, 6.51, 7.39, 8.42, 9.600000000000001, 10.96, 12.51, 14.280000000000001, 16.3, 18.580000000000002, 21.16, 24.07, 27.330000000000002, 30.990000000000002, 35.07, 39.63, 44.69, 50.32, 56.54, 63.42, 71.01, 79.37, 88.55, 98.63, 109.66, 121.72, 134.89000000000001, 149.24, 164.86, 181.84, 200.27, 220.25, 241.88, 265.27, 290.52, 317.76, 347.12, 378.71, 412.68, 449.16, 488.31, 530.27, 575.19
-  MOM_initialize_layers_from_Z MIN_THICKNESS: 0.001
-  MOM_state_initialization VELOCITY_CONFIG: zero
-  MOM_state_initialization CONVERT_THICKNESS_UNITS: False
-  MOM_state_initialization DEPRESS_INITIAL_SURFACE: False
-  MOM_state_initialization TRIM_IC_FOR_P_SURF: False
-  MOM_state_initialization REGRID_ACCELERATE_INIT: False
   MOM_state_initialization ODA_INCUPD: False
   MOM_state_initialization SPONGE: False
 MOM_diag_mediator: unknown
@@ -1312,8 +1268,8 @@ MOM_in domain decomposition:     1 X    1
 
 MOM_in domain decomposition:     1 X    1
    pe,   is,  ie,  js,  je,    isd, ied, jsd, jed
-  MOM_barotropic DTBT as used: 28.907055376634414
-  MOM_barotropic estimated maximum DTBT: 32.11895041848268
+  MOM_barotropic DTBT as used: 27.764623587902634
+  MOM_barotropic estimated maximum DTBT: 30.696880231180494
 MOM_mixed_layer_restrat: unknown
   MOM_mixed_layer_restrat MIXEDLAYER_RESTRAT: False
 MOM_diagnostics: unknown
@@ -1512,430 +1468,6 @@ MOM_neutral_diffusion: unknown
 MOM_lateral_boundary_diffusion: unknown
   MOM_lateral_boundary_diffusion USE_LATERAL_BOUNDARY_DIFFUSION: False
   MOM_tracer_hor_diff DEBUG: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
-  MOM_initialize_tracers_from_Z Z_INIT_HOMOGENIZE: True
-  MOM_initialize_tracers_from_Z Z_INIT_ALE_REMAPPING: True
-  MOM_initialize_tracers_from_Z Z_INIT_REMAPPING_SCHEME: PLM
-  MOM_initialize_tracers_from_Z DEFAULT_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REMAPPING_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z HOR_REGRID_2018_ANSWERS: False
-  MOM_initialize_tracers_from_Z REENTRANT_X: True
-  MOM_initialize_tracers_from_Z TRIPOLAR_N: False
 MOM_obsolete_diagnostics: unknown
   MOM_obsolete_diagnostics OBSOLETE_DIAGNOSTIC_IS_FATAL: True
 MOM_sum_output: unknown
@@ -2183,132 +1715,131 @@ ice model domain decomposition:     1 X    1
    pe,   is,  ie,  js,  je,    isd, ied, jsd, jed
 
                                      time
-Total runtime                       169.959685
-Initialization                        3.641164
-  Init: atmos_model_init              0.010540
-  Init: land_model_init               0.007404
-  Init: ice_model_init                0.037232
-  Init: ocean_model_init              3.442697
-  Init: flux_exchange_init            0.028193
-Main loop                           166.268224
-Termination                           0.047156
-(Ocean continuity update)             0.988826
-(Ocean continuity correction)         4.216783
-(Ocean advect tracer)                19.930399
-(Ocean tracer halo updates)           7.961566
-(Ocean tracer global synch)           0.009428
-  Ice: slow: dynamics                 4.212339
-  Ice: slow: transport                0.158522
-  Ice: slow: thermodyn diags          0.042871
-Ice                                   4.962292
-Ice Fast                              0.232056
-Ice Slow                              4.726737
-Ice Fast/Slow Exchange                0.001012
-Ocean Initialization                  3.430153
-Ocean                               128.181654
-Ocean dynamics                       18.264609
-Ocean thermodynamics and tracers    107.289363
-Ocean Other                           2.504493
-(Ocean tracer advection)             20.173146
-(Ocean diabatic driver)              87.113866
+Total runtime                      1223.842904
+Initialization                        0.704146
+  Init: atmos_model_init              0.004217
+  Init: land_model_init               0.004075
+  Init: ice_model_init                0.021533
+  Init: ocean_model_init              0.582219
+  Init: flux_exchange_init            0.022371
+Main loop                          1223.105059
+Termination                           0.030677
+(Ocean continuity update)             8.148832
+(Ocean continuity correction)        33.653249
+(Ocean advect tracer)               172.712402
+(Ocean tracer halo updates)          59.798238
+(Ocean tracer global synch)           0.054830
+  Ice: slow: dynamics                34.649543
+  Ice: slow: transport                1.128240
+  Ice: slow: thermodyn diags          0.295374
+Ice                                  40.388009
+Ice Fast                              1.888180
+Ice Slow                             38.470905
+Ice Fast/Slow Exchange                0.008954
+Ocean Initialization                  0.569013
+Ocean                              1046.677984
+Ocean dynamics                      145.227179
+Ocean thermodynamics and tracers    881.102747
+Ocean Other                          19.389281
+(Ocean tracer advection)            174.754368
+(Ocean diabatic driver)             706.326342
 (Ocean continuity equation *)         0.000000
-(Ocean set BBL viscosity)             0.271229
-(Ocean message passing *)             0.865714
-(Ocean MOM_initialize_state)          0.248843
-(Ocean init message passing *)        0.000233
+(Ocean set BBL viscosity)             2.135163
+(Ocean message passing *)             6.444893
+(Ocean MOM_initialize_state)          0.015615
+(Ocean init message passing *)        0.000125
 (Ocean mixed layer restrat)           0.000000
-(Ocean collective diagnostics)        1.615739
+(Ocean collective diagnostics)       12.605257
 (Ocean Z-space diagnostics)           0.000000
-(Ocean ALE)                          20.295684
-(Cobalt: carbon calcs)               10.529841
-(Cobalt: phytoplankton growth ca      6.682874
-(Cobalt: bacteria growth calcs)       0.243976
-(Cobalt: zooplankton calculation      3.433087
+(Ocean ALE)                         171.194530
+(Cobalt: carbon calcs)               88.757122
+(Cobalt: phytoplankton growth ca     52.533914
+(Cobalt: bacteria growth calcs)       2.180684
+(Cobalt: zooplankton calculation     28.304503
 (Cobalt: mixotroph calculations)      0.000000
-(Cobalt: other losses)                1.399504
-(Cobalt: production loop)             3.794874
-(Cobalt: ballasting loops)            1.812198
-(Cobalt: source/sink loop 1)          0.899791
-(Cobalt: source/sink loop 2)          0.623814
-(Cobalt: source/sink loop 3)          0.675276
-(Cobalt: source/sink loop 4)          0.238797
-(Cobalt: source/sink loop 5)          0.496009
-(Cobalt: source/sink loop 6)          1.385529
-(Cobalt: send diagnostics)            5.679554
-(Cobalt: calculate diagnostics)       5.597970
-(Initialize from Z)                   0.245103
-(Ocean diagnostics framework)         8.042670
+(Cobalt: other losses)               11.662599
+(Cobalt: production loop)            29.630162
+(Cobalt: ballasting loops)           14.380199
+(Cobalt: source/sink loop 1)          6.224968
+(Cobalt: source/sink loop 2)          4.528607
+(Cobalt: source/sink loop 3)          5.372241
+(Cobalt: source/sink loop 4)          1.844320
+(Cobalt: source/sink loop 5)          3.840100
+(Cobalt: source/sink loop 6)         11.227167
+(Cobalt: send diagnostics)           45.643308
+(Cobalt: calculate diagnostics)      43.785062
+(Initialize from Z)                   0.000904
+(Ocean diagnostics framework)        63.096893
 (Ocean diagnostics remapping)         0.000000
-(Ocean diagnostics grid updates)      0.066345
-(Ocean init message passing)          0.000075
-(Ocean BT pre-calcs only)             0.843110
-(Ocean BT pre-step halo updates)      0.352093
-(Ocean BT stepping calcs only)        0.551735
-(Ocean BT stepping halo updates)      0.173286
-(Ocean BT post-calcs only)            0.104108
-(Ocean BT post-step halo updates      0.067747
-(Ocean BT global synch)               0.003738
-(Ocean Coriolis & mom advection)      0.723203
-(Ocean continuity equation)           5.594902
-(Ocean pressure force)                2.704779
-(Ocean vertical viscosity)            2.588076
-(Ocean horizontal viscosity)          1.029110
-(Ocean momentum increments)           0.092051
-(Ocean message passing)               1.830300
-(Ocean barotropic mode calc)          0.023127
-(Ocean barotropic mode stepping)      2.364508
-(Ocean barotropic forcing calc)       0.161884
-(Ocean kappa_shear)                   3.102100
+(Ocean diagnostics grid updates)      0.489930
+(Ocean init message passing)          0.000078
+(Ocean BT pre-calcs only)             6.297837
+(Ocean BT pre-step halo updates)      2.543722
+(Ocean BT stepping calcs only)        4.660494
+(Ocean BT stepping halo updates)      1.568300
+(Ocean BT post-calcs only)            0.835652
+(Ocean BT post-step halo updates      0.544888
+(Ocean BT global synch)               0.021287
+(Ocean Coriolis & mom advection)      5.772110
+(Ocean continuity equation)          44.663015
+(Ocean pressure force)               22.581414
+(Ocean vertical viscosity)           20.580730
+(Ocean horizontal viscosity)          7.901424
+(Ocean momentum increments)           0.722038
+(Ocean message passing)              14.291564
+(Ocean barotropic mode calc)          0.180587
+(Ocean barotropic mode stepping)     18.413531
+(Ocean barotropic forcing calc)       1.289255
+(Ocean kappa_shear)                  20.195154
 (Ocean diabatic entrain)              0.000000
-(Ocean vert remap)                    5.657375
-(Ocean geothermal)                    0.007350
-(Ocean set_diffusivity)               3.681293
+(Ocean vert remap)                   45.358666
+(Ocean geothermal)                    0.041738
+(Ocean set_diffusivity)              24.845972
 (Ocean KPP)                           0.000000
-(Ocean tracer_columns)               55.549239
-(Ocean diabatic tridiag)              0.086721
-(Ocean diabatic message passing)      0.180339
-(Ocean find_uv_at_h)                  0.112132
+(Ocean tracer_columns)              450.427266
+(Ocean diabatic tridiag)              0.625327
+(Ocean diabatic message passing)      1.496383
+(Ocean find_uv_at_h)                  0.738908
 (Ocean frazil)                        0.000000
 (Ocean diffuse tracer)                0.000000
 (Ocean epipycnal diffuse tracer)      0.000000
-(Initialize tracer from Z)            2.403300
-Ocean surface forcing                 0.158131
-(Ocean forcing diagnostics)           0.236548
-Land-ice-atm coupler                 32.116030
-SFC boundary layer                   16.880990
-Flux DN from atm                     15.160338
-XGrid generation                      0.012476
-Flux UP to atm                        0.035277
-Flux land to ice                      0.024170
-Ice-ocean coupler                     0.030413
-Flux ice to ocean                     0.020431
-Flux ocean to ice                     0.009294
-generate_sfc_xgrid                    0.014582
-flux_ocean_to_ice                     0.010548
-flux_ice_to_ocean                     0.021414
-ATM                                  37.255095
- ATM: atmos loop                     32.424189
+Ocean surface forcing                 1.101508
+(Ocean forcing diagnostics)           0.988179
+Land-ice-atm coupler                129.141933
+SFC boundary layer                   71.246538
+Flux DN from atm                     57.309620
+XGrid generation                      0.111935
+Flux UP to atm                        0.258057
+Flux land to ice                      0.193416
+Ice-ocean coupler                     0.223286
+Flux ice to ocean                     0.148354
+Flux ocean to ice                     0.069660
+generate_sfc_xgrid                    0.131737
+flux_ocean_to_ice                     0.078354
+flux_ice_to_ocean                     0.157483
+ATM                                 170.847291
+ ATM: atmos loop                    131.538089
   A-L: atmos_tracer_driver_gathe      0.000000
-  A-L: sfc_boundary_layer            16.908566
+  A-L: sfc_boundary_layer            71.412853
   A-L: update_atmos_model_dynami      0.000000
-  A-L: serial radiation               0.000551
+  A-L: serial radiation               0.001953
   A-L: update_atmos_model_down        0.000000
-  A-L: flux_down_from_atmos          15.168406
-  A-L: update_land_model_fast         0.000303
-  A-L: update_ice_model_fast          0.175114
-  A-L: flux_up_to_atmos               0.039293
-  A-L: update_atmos_model_up          0.000275
-  A-L: update_atmos_model_state       0.000273
- ATM: update_land_model_slow          0.000457
- ATM: flux_land_to_ice                0.026214
- Ice: set_ice_surface fast            0.059257
- Ice: update_ice_model_slow fast      0.088499
- Ice: set_ice_surface slow            0.072087
- Ice: update_ice_model_slow slow      4.690657
- Ice: flux_ice_to_ocean_stocks        0.004478
- Ice: set_ice_surface exchange        0.001654
- Ice: update_ice_model_slow exch      0.001631
-OCN                                 128.789843
+  A-L: flux_down_from_atmos          57.380687
+  A-L: update_land_model_fast         0.002440
+  A-L: update_ice_model_fast          1.402431
+  A-L: flux_up_to_atmos               0.292162
+  A-L: update_atmos_model_up          0.000960
+  A-L: update_atmos_model_state       0.001436
+ ATM: update_land_model_slow          0.001499
+ ATM: flux_land_to_ice                0.213096
+ Ice: set_ice_surface fast            0.509383
+ Ice: update_ice_model_slow fast      0.704259
+ Ice: set_ice_surface slow            0.559063
+ Ice: update_ice_model_slow slow     38.191246
+ Ice: flux_ice_to_ocean_stocks        0.027355
+ Ice: set_ice_surface exchange        0.013877
+ Ice: update_ice_model_slow exch      0.011722
+OCN                                1050.428996
 flux_check_stocks                     0.000000
 intermediate restart                  0.000000
-final flux_check_stocks               0.001414
+final flux_check_stocks               0.001375

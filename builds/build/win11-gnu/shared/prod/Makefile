@@ -183,451 +183,451 @@ tridiagonal.o: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tridiagon
 	$(FC) $(CPPDEFS) $(FPPFLAGS) $(FFLAGS) $(OTHERFLAGS) $(OTHER_FFLAGS) -c	/home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tridiagonal/tridiagonal.F90
 xgrid.o: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/xgrid.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/fms_platform.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/file_version.h fms.o mpp.o mpp_domains.o constants.o mosaic2.o stock_constants.o gradient.o fms2_io.o time_manager.o diag_manager.o
 	$(FC) $(CPPDEFS) $(FPPFLAGS) $(FFLAGS) $(OTHERFLAGS) $(OTHER_FFLAGS) -c -I/home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include	/home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/xgrid.F90
-./monin_obukhov_inter.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov_inter.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov_inter.F90 .
-./compute_global_checksum.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compute_global_checksum.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compute_global_checksum.inc .
-./fms_switches.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/fms_switches.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/fms_switches.h .
-./drifters_comm.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_comm.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_comm.F90 .
-./read_data_4d.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_4d.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_4d.inc .
-./fms_netcdf_domain_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_domain_io.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_domain_io.F90 .
-./drifters_compute_k.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_compute_k.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_compute_k.h .
-./mpp_parameter.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_parameter.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_parameter.F90 .
-./mpp_chksum_int.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_int.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_int.h .
-./mpp_do_update_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_ad.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_ad.h .
-./mpp_scatter.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_scatter.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_scatter.h .
-./blackboxio.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/blackboxio.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/blackboxio.F90 .
-./mpp_do_updateV_nonblock.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_nonblock.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_nonblock.h .
-./mpp_domains_misc.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_misc.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_misc.inc .
-./axis_utils.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils.F90 .
-./write_data.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/write_data.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/write_data.inc .
-./group_update_unpack.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_unpack.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_unpack.inc .
-./mpp_sum_nocomm.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm.h .
-./domain_write.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_write.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_write.inc .
-./drifters_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_io.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_io.F90 .
-./sat_vapor_pres_k.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres_k.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres_k.F90 .
-./fms.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms.F90 .
-./mpp_group_update.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_group_update.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_group_update.h .
-./tracer_manager.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tracer_manager/tracer_manager.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tracer_manager/tracer_manager.F90 .
-./mpp_do_get_boundary.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary.h .
-./mpp_get_boundary_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary_ad.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary_ad.h .
-./gaussian_topog.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/gaussian_topog.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/gaussian_topog.F90 .
-./fms_netcdf_unstructured_domain_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_unstructured_domain_io.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_unstructured_domain_io.F90 .
-./get_data_type_string.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_data_type_string.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_data_type_string.inc .
-./fmsconstants.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/fmsconstants.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/fmsconstants.F90 .
-./diag_data.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_data.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_data.F90 .
-./mpp_pset.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_pset.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_pset.F90 .
-./memutils.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/memutils/memutils.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/memutils/memutils.F90 .
-./random_numbers.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/random_numbers.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/random_numbers.F90 .
-./mpp_io_util.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_util.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_util.inc .
-./create_xgrid.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.c
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.c .
-./mpp_do_checkV.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_checkV.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_checkV.h .
-./time_interp.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp.F90 .
-./xgrid.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/xgrid.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/xgrid.F90 .
-./fms_io_unstructured_get_file_name.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_name.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_name.inc .
-./netcdf_read_data.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_read_data.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_read_data.inc .
-./atmos_ocean_fluxes.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/atmos_ocean_fluxes.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/atmos_ocean_fluxes.F90 .
-./mpp_global_sum.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum.h .
-./get_grid_version.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/get_grid_version.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/get_grid_version.F90 .
-./mpp_do_global_field_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field_ad.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field_ad.h .
-./file_version.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/file_version.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/file_version.h .
-./fms_affinity.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/fms_affinity.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/fms_affinity.F90 .
-./mpp_update_nest_domains.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_nest_domains.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_nest_domains.h .
-./mpp_write_2Ddecomp.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_2Ddecomp.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_2Ddecomp.h .
-./array_utils_char.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils_char.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils_char.inc .
-./mpp_update_domains2D_nonblock.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_nonblock.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_nonblock.h .
-./fms_io_unstructured_save_restart.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_save_restart.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_save_restart.inc .
-./fms_io_unstructured_read.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_read.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_read.inc .
-./diag_manager.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_manager.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_manager.F90 .
-./mpp_write_unlimited_axis.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_unlimited_axis.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_unlimited_axis.h .
-./affinity.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/affinity.c
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/affinity.c .
-./get_variable_attribute.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_variable_attribute.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_variable_attribute.inc .
-./mpp_do_get_boundary_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary_ad.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary_ad.h .
-./domain_read.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_read.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_read.inc .
-./mpp_reduce_nocomm.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_nocomm.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_nocomm.h .
-./gradient.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient.F90 .
-./read_mosaic.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.h .
-./mpp_do_updateV.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV.h .
-./fms_platform.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/fms_platform.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/fms_platform.h .
-./stock_constants.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/stock_constants.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/stock_constants.F90 .
-./tridiagonal.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tridiagonal/tridiagonal.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tridiagonal/tridiagonal.F90 .
-./mpp_error_s_a.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_a.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_a.h .
-./fms2_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms2_io.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms2_io.F90 .
-./mpp_transmit_nocomm.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_nocomm.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_nocomm.h .
-./netcdf_write_data.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_write_data.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_write_data.inc .
-./register_variable_attribute.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_variable_attribute.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_variable_attribute.inc .
-./mosaic_util.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.h .
-./mpp_io_unstructured_read.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_read.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_read.inc .
-./mpp_update_domains2D.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D.h .
-./mpp_type_nocomm.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_nocomm.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_nocomm.h .
-./mpp_domains.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_domains.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_domains.F90 .
-./libFMS.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/libFMS.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/libFMS.F90 .
-./interp.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.h .
-./gather_data_bc.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/gather_data_bc.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/gather_data_bc.inc .
-./mpp_error_a_a.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_a.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_a.h .
-./gradient_c2l.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.c
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.c .
-./mpp_read_2Ddecomp.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_2Ddecomp.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_2Ddecomp.h .
-./mpp_memutils.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memutils.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memutils.F90 .
-./mpp_global_sum_tl.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_tl.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_tl.h .
-./group_update_pack.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_pack.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_pack.inc .
-./unstructured_domain_read.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_read.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_read.inc .
-./scatter_data_bc.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/scatter_data_bc.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/scatter_data_bc.inc .
-./mpp_read_compressed.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_compressed.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_compressed.h .
-./mpp_global_field_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ad.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ad.h .
-./mpp_io_unstructured_write.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_write.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_write.inc .
-./system_clock.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/system_clock.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/system_clock.h .
-./mpp.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp.F90 .
-./mpp_chksum_scalar.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_scalar.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_scalar.h .
-./read_data_2d.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_2d.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_2d.inc .
-./mosaic2.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/mosaic2.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/mosaic2.F90 .
-./mosaic.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic.F90 .
-./mpp_io_misc.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_misc.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_misc.inc .
-./mpp_comm_mpi.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_mpi.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_mpi.inc .
-./unstructured_domain_write.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_write.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_write.inc .
-./mpp_global_sum_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_ad.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_ad.h .
-./amip_interp.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/amip_interp/amip_interp.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/amip_interp/amip_interp.F90 .
-./mpp_util.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util.inc .
-./register_unstructured_domain_restart_variable.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_unstructured_domain_restart_variable.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_unstructured_domain_restart_variable.inc .
-./mpp_update_domains2D_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_ad.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_ad.h .
-./fms_io_unstructured_register_restart_axis.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_axis.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_axis.inc .
-./mpp_global_field_ug.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ug.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ug.h .
-./mpp_comm_nocomm.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_nocomm.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_nocomm.inc .
-./mpp_error_a_s.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_s.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_s.h .
-./mpp_do_update.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update.h .
-./diag_integral.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_integral/diag_integral.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_integral/diag_integral.F90 .
-./array_utils.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils.inc .
-./gradient_c2l.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.h .
-./fms_io_unstructured_register_restart_field.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_field.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_field.inc .
-./drifters_core.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_core.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_core.F90 .
-./drifters_set_field.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_set_field.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_set_field.h .
-./diag_util.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_util.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_util.F90 .
-./read_mosaic.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.c
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.c .
-./mpp_read_distributed_ascii.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.h .
-./mpp_reduce_mpi.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_mpi.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_mpi.h .
-./mpp_type_mpi.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_mpi.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_mpi.h .
-./mpp_do_updateV_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_ad.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_ad.h .
-./time_manager.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/time_manager.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/time_manager.F90 .
-./read_data_3d.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_3d.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_3d.inc .
-./diag_axis.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_axis.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_axis.F90 .
-./mpp_transmit_mpi.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_mpi.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_mpi.h .
-./mpp_io_read.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_read.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_read.inc .
-./ensemble_manager.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/ensemble_manager.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/ensemble_manager.F90 .
-./fms_io_unstructured_setup_one_field.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_setup_one_field.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_setup_one_field.inc .
-./mpp_sum_ad.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_ad.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_ad.inc .
-./constant.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/constant.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/constant.h .
-./horiz_interp_bicubic.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bicubic.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bicubic.F90 .
-./horiz_interp_conserve.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_conserve.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_conserve.F90 .
-./mpp_io_write.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_write.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_write.inc .
-./mpp_memuse.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memuse.c
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memuse.c .
-./horiz_interp_bilinear.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bilinear.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bilinear.F90 .
-./mpp_alltoall_mpi.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_mpi.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_mpi.h .
-./interp.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.c
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.c .
-./get_global_attribute.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_global_attribute.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_global_attribute.inc .
-./compressed_read.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_read.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_read.inc .
-./topography.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/topography.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/topography.F90 .
-./mpp_comm.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm.inc .
-./mpp_data.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_data.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_data.F90 .
-./constants.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/constants.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/constants.F90 .
-./mpp_efp.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_efp.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_efp.F90 .
-./mpp_io_connect.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_connect.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_connect.inc .
-./mpp_unstruct_pass_data.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_pass_data.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_pass_data.h .
-./mpp_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_io.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_io.F90 .
-./drifters_push.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_push.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_push.h .
-./diag_output.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_output.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_output.F90 .
-./mpp_utilities.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_utilities.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_utilities.F90 .
-./mpp_read_distributed_ascii.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.inc .
-./coupler_types.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/coupler_types.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/coupler_types.F90 .
-./interpolator.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/interpolator/interpolator.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/interpolator/interpolator.F90 .
-./drifters.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters.F90 .
-./horiz_interp_type.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_type.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_type.F90 .
-./create_xgrid.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.h .
-./mpp_global_reduce.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_reduce.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_reduce.h .
-./mpp_domains_reduce.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_reduce.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_reduce.inc .
-./mpp_sum_mpi_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi_ad.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi_ad.h .
-./horiz_interp.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp.F90 .
-./mpp_do_update_nest.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nest.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nest.h .
-./mpp_sum.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum.inc .
-./fms_io_utils.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_io_utils.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_io_utils.F90 .
-./fms_io_unstructured_field_exist.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_field_exist.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_field_exist.inc .
-./mpp_transmit.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit.inc .
-./mpp_domains_util.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_util.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_util.inc .
-./axis_utils2.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils2.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils2.F90 .
-./fms_io_unstructured_get_field_size.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_field_size.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_field_size.inc .
-./mpp_write.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write.h .
-./astronomy.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/astronomy/astronomy.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/astronomy/astronomy.F90 .
-./time_interp_external.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external.F90 .
-./mersennetwister.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/mersennetwister.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/mersennetwister.F90 .
-./mpp_domains_define.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_define.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_define.inc .
-./mosaic_util.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.c
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.c .
-./register_domain_restart_variable.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_domain_restart_variable.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_domain_restart_variable.inc .
-./mpp_do_check.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_check.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_check.h .
-./mpp_do_update_nonblock.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nonblock.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nonblock.h .
-./mpp_util_mpi.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_mpi.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_mpi.inc .
-./grid2.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/grid2.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/grid2.F90 .
-./diag_table.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_table.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_table.F90 .
-./parse.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/parse.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/parse.inc .
-./mpp_get_boundary.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary.h .
-./mpp_data_mpi.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_mpi.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_mpi.inc .
 ./column_diagnostics.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/column_diagnostics/column_diagnostics.F90
 	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/column_diagnostics/column_diagnostics.F90 .
-./mpp_define_nest_domains.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_define_nest_domains.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_define_nest_domains.inc .
-./mpp_error_s_s.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_s.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_s.h .
-./get_cal_time.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/get_cal_time.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/get_cal_time.F90 .
-./mpp_chksum.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum.h .
-./diag_grid.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_grid.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_grid.F90 .
-./mpp_do_redistribute.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_redistribute.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_redistribute.h .
-./platform.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/platform/platform.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/platform/platform.F90 .
-./data_override.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/data_override.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/data_override.F90 .
-./mpp_sum_mpi.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi.h .
-./horiz_interp_spherical.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_spherical.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_spherical.F90 .
-./mpp_data_nocomm.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_nocomm.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_nocomm.inc .
-./netcdf_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/netcdf_io.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/netcdf_io.F90 .
-./mpp_global_field.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field.h .
-./drifters_input.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_input.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_input.F90 .
-./fms_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io.F90 .
-./fm_util.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/fm_util.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/fm_util.F90 .
+./mpp_sum.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum.inc .
+./create_xgrid.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.h .
+./mpp_io_unstructured_write.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_write.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_write.inc .
+./mpp_do_updateV.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV.h .
+./create_xgrid.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.c
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.c .
+./random_numbers.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/random_numbers.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/random_numbers.F90 .
+./mpp_type_nocomm.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_nocomm.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_nocomm.h .
+./mpp_update_domains2D_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_ad.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_ad.h .
+./drifters_comm.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_comm.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_comm.F90 .
+./drifters.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters.F90 .
+./read_mosaic.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.h .
+./mpp_data_mpi.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_mpi.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_mpi.inc .
 ./time_interp_external2.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external2.F90
 	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external2.F90 .
-./mpp_sum_nocomm_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm_ad.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm_ad.h .
-./mpp_unstruct_domain.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_domain.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_domain.inc .
-./field_manager.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/field_manager.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/field_manager.F90 .
-./compressed_write.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_write.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_write.inc .
-./netcdf_add_restart_variable.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_add_restart_variable.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_add_restart_variable.inc .
-./block_control.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/block_control/block_control.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/block_control/block_control.F90 .
-./mpp_util_nocomm.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_nocomm.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_nocomm.inc .
-./sat_vapor_pres.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres.F90 .
-./fms_io_unstructured_get_file_unit.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_unit.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_unit.inc .
-./mpp_alltoall_nocomm.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_nocomm.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_nocomm.h .
-./mpp_gather.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_gather.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_gather.h .
-./cloud_interpolator.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/cloud_interpolator.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/cloud_interpolator.F90 .
-./quicksort.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/quicksort.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/quicksort.F90 .
-./mpp_do_global_field.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field.h .
-./mpp_write_compressed.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_compressed.h
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_compressed.h .
-./register_global_attribute.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_global_attribute.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_global_attribute.inc .
-./grid.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/grid.F90
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/grid.F90 .
-./fms_io_unstructured_file_unit.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_file_unit.inc
-	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_file_unit.inc .
+./time_interp_external.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external.F90 .
+./array_utils_char.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils_char.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils_char.inc .
+./mpp_io_misc.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_misc.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_misc.inc .
+./gaussian_topog.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/gaussian_topog.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/gaussian_topog.F90 .
+./mpp_io_write.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_write.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_write.inc .
+./mpp_sum_mpi_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi_ad.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi_ad.h .
+./mpp_utilities.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_utilities.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_utilities.F90 .
+./mpp_parameter.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_parameter.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_parameter.F90 .
+./mpp_pset.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_pset.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_pset.F90 .
+./mpp_domains.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_domains.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_domains.F90 .
+./drifters_core.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_core.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_core.F90 .
+./axis_utils2.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils2.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils2.F90 .
 ./mpp_domains_comm.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_comm.inc
 	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_comm.inc .
+./get_grid_version.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/get_grid_version.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/get_grid_version.F90 .
+./file_version.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/file_version.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/file_version.h .
+./mpp_do_redistribute.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_redistribute.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_redistribute.h .
+./mpp_get_boundary_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary_ad.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary_ad.h .
+./mpp_sum_mpi.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi.h .
+./mpp_comm.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm.inc .
+./mosaic_util.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.c
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.c .
+./diag_grid.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_grid.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_grid.F90 .
+./get_variable_attribute.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_variable_attribute.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_variable_attribute.inc .
+./fm_util.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/fm_util.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/fm_util.F90 .
+./mpp_sum_nocomm_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm_ad.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm_ad.h .
+./fms_platform.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/fms_platform.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/fms_platform.h .
+./time_manager.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/time_manager.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/time_manager.F90 .
+./diag_manager.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_manager.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_manager.F90 .
+./mpp_alltoall_nocomm.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_nocomm.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_nocomm.h .
+./mpp_data_nocomm.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_nocomm.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_nocomm.inc .
+./mpp_util_mpi.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_mpi.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_mpi.inc .
+./netcdf_add_restart_variable.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_add_restart_variable.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_add_restart_variable.inc .
+./netcdf_write_data.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_write_data.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_write_data.inc .
+./diag_axis.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_axis.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_axis.F90 .
+./fms_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io.F90 .
+./sat_vapor_pres.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres.F90 .
+./fms_io_unstructured_get_file_name.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_name.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_name.inc .
+./fms2_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms2_io.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms2_io.F90 .
+./mpp_do_update_nest.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nest.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nest.h .
+./topography.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/topography.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/topography.F90 .
+./amip_interp.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/amip_interp/amip_interp.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/amip_interp/amip_interp.F90 .
+./astronomy.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/astronomy/astronomy.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/astronomy/astronomy.F90 .
+./mpp_do_update.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update.h .
+./sat_vapor_pres_k.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres_k.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres_k.F90 .
+./mersennetwister.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/mersennetwister.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/mersennetwister.F90 .
+./affinity.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/affinity.c
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/affinity.c .
+./mpp_global_field.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field.h .
+./mpp_define_nest_domains.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_define_nest_domains.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_define_nest_domains.inc .
+./drifters_push.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_push.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_push.h .
+./get_cal_time.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/get_cal_time.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/get_cal_time.F90 .
+./mpp_domains_misc.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_misc.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_misc.inc .
+./mpp_read_compressed.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_compressed.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_compressed.h .
+./horiz_interp_type.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_type.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_type.F90 .
+./fms_netcdf_unstructured_domain_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_unstructured_domain_io.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_unstructured_domain_io.F90 .
+./fms_io_unstructured_register_restart_field.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_field.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_field.inc .
+./horiz_interp_bicubic.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bicubic.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bicubic.F90 .
+./mpp_reduce_mpi.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_mpi.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_mpi.h .
+./tridiagonal.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tridiagonal/tridiagonal.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tridiagonal/tridiagonal.F90 .
+./horiz_interp_spherical.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_spherical.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_spherical.F90 .
+./stock_constants.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/stock_constants.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/stock_constants.F90 .
+./compute_global_checksum.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compute_global_checksum.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compute_global_checksum.inc .
+./mpp_gather.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_gather.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_gather.h .
+./mpp_util_nocomm.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_nocomm.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_nocomm.inc .
+./mpp_io_unstructured_read.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_read.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_read.inc .
+./mpp_write_2Ddecomp.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_2Ddecomp.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_2Ddecomp.h .
+./mpp_do_check.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_check.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_check.h .
+./domain_write.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_write.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_write.inc .
+./fms_io_unstructured_setup_one_field.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_setup_one_field.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_setup_one_field.inc .
+./mpp_transmit.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit.inc .
+./mpp_chksum.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum.h .
+./diag_output.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_output.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_output.F90 .
+./compressed_write.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_write.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_write.inc .
+./diag_table.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_table.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_table.F90 .
+./mpp_io_util.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_util.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_util.inc .
+./register_global_attribute.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_global_attribute.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_global_attribute.inc .
+./drifters_set_field.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_set_field.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_set_field.h .
+./write_data.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/write_data.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/write_data.inc .
+./diag_util.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_util.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_util.F90 .
+./unstructured_domain_read.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_read.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_read.inc .
+./mpp_io_read.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_read.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_read.inc .
+./mpp_efp.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_efp.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_efp.F90 .
+./drifters_input.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_input.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_input.F90 .
+./read_data_4d.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_4d.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_4d.inc .
+./mpp_update_nest_domains.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_nest_domains.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_nest_domains.h .
+./netcdf_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/netcdf_io.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/netcdf_io.F90 .
+./mpp_comm_mpi.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_mpi.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_mpi.inc .
+./platform.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/platform/platform.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/platform/platform.F90 .
+./mpp_do_updateV_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_ad.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_ad.h .
+./mpp_transmit_nocomm.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_nocomm.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_nocomm.h .
+./drifters_compute_k.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_compute_k.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_compute_k.h .
+./mpp_do_get_boundary_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary_ad.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary_ad.h .
+./mpp_memuse.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memuse.c
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memuse.c .
+./mpp.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp.F90 .
+./mpp_read_2Ddecomp.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_2Ddecomp.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_2Ddecomp.h .
+./interpolator.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/interpolator/interpolator.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/interpolator/interpolator.F90 .
+./mpp_do_updateV_nonblock.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_nonblock.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_nonblock.h .
+./diag_integral.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_integral/diag_integral.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_integral/diag_integral.F90 .
+./drifters_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_io.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_io.F90 .
+./field_manager.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/field_manager.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/field_manager.F90 .
+./mpp_unstruct_pass_data.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_pass_data.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_pass_data.h .
+./block_control.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/block_control/block_control.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/block_control/block_control.F90 .
+./mpp_write_compressed.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_compressed.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_compressed.h .
+./mpp_domains_util.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_util.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_util.inc .
+./mosaic_util.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.h .
+./fms_io_unstructured_field_exist.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_field_exist.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_field_exist.inc .
+./fms.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms.F90 .
+./libFMS.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/libFMS.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/libFMS.F90 .
+./mpp_data.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_data.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_data.F90 .
+./get_global_attribute.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_global_attribute.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_global_attribute.inc .
+./mpp_do_global_field_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field_ad.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field_ad.h .
+./mpp_chksum_scalar.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_scalar.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_scalar.h .
+./group_update_pack.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_pack.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_pack.inc .
+./fms_io_unstructured_register_restart_axis.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_axis.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_axis.inc .
+./cloud_interpolator.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/cloud_interpolator.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/cloud_interpolator.F90 .
+./grid2.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/grid2.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/grid2.F90 .
+./domain_read.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_read.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_read.inc .
+./mpp_scatter.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_scatter.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_scatter.h .
+./read_data_3d.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_3d.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_3d.inc .
+./mpp_error_a_a.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_a.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_a.h .
+./tracer_manager.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tracer_manager/tracer_manager.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tracer_manager/tracer_manager.F90 .
+./mpp_unstruct_domain.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_domain.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_domain.inc .
+./monin_obukhov_inter.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov_inter.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov_inter.F90 .
+./mpp_global_sum_tl.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_tl.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_tl.h .
+./horiz_interp_bilinear.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bilinear.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bilinear.F90 .
+./mpp_read_distributed_ascii.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.h .
+./axis_utils.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils.F90 .
+./interp.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.c
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.c .
+./mpp_util.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util.inc .
+./parse.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/parse.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/parse.inc .
+./mpp_io_connect.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_connect.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_connect.inc .
+./register_domain_restart_variable.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_domain_restart_variable.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_domain_restart_variable.inc .
+./read_mosaic.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.c
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.c .
+./register_variable_attribute.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_variable_attribute.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_variable_attribute.inc .
+./memutils.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/memutils/memutils.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/memutils/memutils.F90 .
+./mpp_reduce_nocomm.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_nocomm.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_nocomm.h .
+./mpp_global_field_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ad.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ad.h .
+./mpp_do_update_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_ad.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_ad.h .
+./mpp_do_update_nonblock.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nonblock.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nonblock.h .
+./gradient_c2l.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.h .
+./mpp_error_s_s.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_s.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_s.h .
+./mpp_do_checkV.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_checkV.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_checkV.h .
+./mpp_get_boundary.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary.h .
+./grid.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/grid.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/grid.F90 .
+./mpp_update_domains2D.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D.h .
+./mpp_update_domains2D_nonblock.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_nonblock.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_nonblock.h .
+./system_clock.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/system_clock.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/system_clock.h .
+./atmos_ocean_fluxes.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/atmos_ocean_fluxes.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/atmos_ocean_fluxes.F90 .
+./mpp_global_field_ug.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ug.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ug.h .
+./xgrid.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/xgrid.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/xgrid.F90 .
+./mpp_global_sum_ad.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_ad.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_ad.h .
+./gradient_c2l.c: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.c
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.c .
+./mpp_error_a_s.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_s.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_s.h .
+./data_override.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/data_override.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/data_override.F90 .
+./get_data_type_string.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_data_type_string.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_data_type_string.inc .
+./constants.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/constants.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/constants.F90 .
+./mpp_domains_reduce.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_reduce.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_reduce.inc .
+./mpp_read_distributed_ascii.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.inc .
+./fms_netcdf_domain_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_domain_io.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_domain_io.F90 .
+./coupler_types.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/coupler_types.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/coupler_types.F90 .
+./mpp_global_sum.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum.h .
+./horiz_interp_conserve.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_conserve.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_conserve.F90 .
+./gather_data_bc.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/gather_data_bc.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/gather_data_bc.inc .
+./mpp_alltoall_mpi.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_mpi.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_mpi.h .
+./mpp_sum_nocomm.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm.h .
+./mpp_write.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write.h .
+./mpp_sum_ad.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_ad.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_ad.inc .
+./diag_data.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_data.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_data.F90 .
+./compressed_read.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_read.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_read.inc .
+./unstructured_domain_write.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_write.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_write.inc .
+./fms_affinity.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/fms_affinity.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/fms_affinity.F90 .
+./mpp_global_reduce.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_reduce.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_reduce.h .
+./fms_io_unstructured_get_file_unit.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_unit.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_unit.inc .
+./read_data_2d.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_2d.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_2d.inc .
+./netcdf_read_data.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_read_data.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_read_data.inc .
+./array_utils.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils.inc .
+./mpp_error_s_a.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_a.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_a.h .
+./fms_io_utils.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_io_utils.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_io_utils.F90 .
+./fmsconstants.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/fmsconstants.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/fmsconstants.F90 .
+./mpp_domains_define.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_define.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_define.inc .
+./interp.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.h .
+./blackboxio.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/blackboxio.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/blackboxio.F90 .
+./mpp_chksum_int.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_int.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_int.h .
+./fms_io_unstructured_read.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_read.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_read.inc .
+./gradient.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient.F90 .
+./fms_io_unstructured_save_restart.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_save_restart.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_save_restart.inc .
+./mpp_memutils.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memutils.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memutils.F90 .
+./mpp_comm_nocomm.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_nocomm.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_nocomm.inc .
+./quicksort.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/quicksort.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/quicksort.F90 .
+./mpp_do_get_boundary.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary.h .
+./time_interp.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp.F90 .
+./mpp_write_unlimited_axis.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_unlimited_axis.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_unlimited_axis.h .
+./scatter_data_bc.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/scatter_data_bc.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/scatter_data_bc.inc .
+./mosaic2.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/mosaic2.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/mosaic2.F90 .
+./horiz_interp.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp.F90 .
+./group_update_unpack.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_unpack.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_unpack.inc .
 ./monin_obukhov.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov.F90
 	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov.F90 .
-SRC = /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/stock_constants.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_comm.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_grid.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_core.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bilinear.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/get_grid_version.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/quicksort.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_domains.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_pset.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/mersennetwister.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_integral/diag_integral.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_io_utils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/time_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_data.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bicubic.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/affinity.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/netcdf_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/libFMS.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_unstructured_domain_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_conserve.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/fm_util.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/blackboxio.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_data.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/interpolator/interpolator.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memuse.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_output.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms2_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/astronomy/astronomy.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_axis.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/fms_affinity.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/grid2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/grid.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_type.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_domain_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/coupler_types.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/column_diagnostics/column_diagnostics.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/amip_interp/amip_interp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/get_cal_time.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_table.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_spherical.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/cloud_interpolator.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/field_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_efp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_parameter.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/block_control/block_control.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tridiagonal/tridiagonal.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/topography.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_utilities.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tracer_manager/tracer_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/platform/platform.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/memutils/memutils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/mosaic2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memutils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/random_numbers.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres_k.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/ensemble_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov_inter.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/atmos_ocean_fluxes.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_util.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/xgrid.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/constants.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_input.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/gaussian_topog.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/data_override.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/fmsconstants.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_compressed.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/system_clock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_scalar.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_2d.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_tl.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_pack.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_nocomm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/scatter_data_bc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_domain.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_add_restart_variable.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_nocomm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_unit.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_misc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_mpi.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ug.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_compressed.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_global_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_file_unit.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_comm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_gather.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_unstructured_domain_restart_variable.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_axis.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_field_size.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_unlimited_axis.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_field_exist.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_util.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nonblock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/fms_platform.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_mpi.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/parse.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_variable_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_define.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_domain_restart_variable.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_check.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_write_data.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_variable_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_define_nest_domains.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_s.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_a.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_mpi.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/gather_data_bc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_a.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_2Ddecomp.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_redistribute.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_data_type_string.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_connect.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_pass_data.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_push.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_checkV.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_name.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_read_data.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_util.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_nest_domains.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_2Ddecomp.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nest.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils_char.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_nonblock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_save_restart.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_reduce.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_reduce.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/file_version.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_field.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_set_field.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_4d.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compute_global_checksum.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_nocomm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_s.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/fms_switches.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_3d.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_misc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_nonblock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_compute_k.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_int.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_scatter.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/write_data.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_ad.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_setup_one_field.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/constant.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_unpack.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_group_update.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_global_attribute.inc
-OBJ = drifters_io.o stock_constants.o drifters.o drifters_comm.o gradient.o diag_grid.o drifters_core.o diag_manager.o horiz_interp_bilinear.o get_grid_version.o quicksort.o horiz_interp.o mpp_domains.o mpp_pset.o mersennetwister.o mosaic_util.o diag_integral.o fms_io_utils.o time_interp_external2.o time_manager.o mpp_data.o horiz_interp_bicubic.o affinity.o netcdf_io.o libFMS.o fms_netcdf_unstructured_domain_io.o horiz_interp_conserve.o fm_util.o blackboxio.o diag_data.o interpolator.o create_xgrid.o mpp_memuse.o gradient_c2l.o diag_output.o time_interp_external.o fms2_io.o read_mosaic.o fms_io.o astronomy.o diag_axis.o fms_affinity.o grid2.o grid.o horiz_interp_type.o mpp.o fms_netcdf_domain_io.o coupler_types.o monin_obukhov.o column_diagnostics.o amip_interp.o get_cal_time.o axis_utils2.o diag_table.o horiz_interp_spherical.o cloud_interpolator.o field_manager.o mosaic.o mpp_efp.o mpp_parameter.o block_control.o tridiagonal.o topography.o mpp_utilities.o time_interp.o interp.o tracer_manager.o platform.o memutils.o mpp_io.o mosaic2.o mpp_memutils.o random_numbers.o sat_vapor_pres_k.o ensemble_manager.o sat_vapor_pres.o monin_obukhov_inter.o axis_utils.o atmos_ocean_fluxes.o fms.o diag_util.o xgrid.o constants.o drifters_input.o gaussian_topog.o data_override.o fmsconstants.o
-OFF = /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov_inter.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compute_global_checksum.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/fms_switches.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_comm.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_4d.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_domain_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_compute_k.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_parameter.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_int.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_scatter.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/blackboxio.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_nonblock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_misc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/write_data.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_unpack.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres_k.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_group_update.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tracer_manager/tracer_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/gaussian_topog.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_unstructured_domain_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_data_type_string.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/fmsconstants.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_data.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_pset.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/memutils/memutils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/random_numbers.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_util.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_checkV.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/xgrid.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_name.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_read_data.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/atmos_ocean_fluxes.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/get_grid_version.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/file_version.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/fms_affinity.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_nest_domains.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_2Ddecomp.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils_char.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_nonblock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_save_restart.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_unlimited_axis.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/affinity.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_variable_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/fms_platform.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/stock_constants.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tridiagonal/tridiagonal.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_a.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms2_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_write_data.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_variable_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_domains.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/libFMS.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/gather_data_bc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_a.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_2Ddecomp.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memutils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_tl.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_pack.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/scatter_data_bc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_compressed.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/system_clock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_scalar.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_2d.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/mosaic2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_misc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_mpi.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/amip_interp/amip_interp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_unstructured_domain_restart_variable.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_axis.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ug.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_nocomm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_s.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_integral/diag_integral.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_field.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_core.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_set_field.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_util.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/time_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_3d.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_axis.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/ensemble_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_setup_one_field.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_ad.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/constant.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bicubic.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_conserve.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memuse.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bilinear.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_global_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/topography.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_data.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/constants.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_efp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_connect.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_pass_data.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_push.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_output.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_utilities.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/coupler_types.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/interpolator/interpolator.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_type.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_reduce.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_reduce.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nest.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_io_utils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_field_exist.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_util.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_field_size.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/astronomy/astronomy.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/mersennetwister.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_define.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_domain_restart_variable.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_check.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nonblock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_mpi.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/grid2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_table.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/parse.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_mpi.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/column_diagnostics/column_diagnostics.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_define_nest_domains.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_s.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/get_cal_time.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_grid.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_redistribute.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/platform/platform.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/data_override.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_spherical.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_nocomm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/netcdf_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_input.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/fm_util.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_domain.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/field_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_add_restart_variable.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/block_control/block_control.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_nocomm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_unit.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_gather.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/cloud_interpolator.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/quicksort.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_compressed.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_global_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/grid.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_file_unit.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_comm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov.F90
+./mpp_io.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_io.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_io.F90 .
+./fms_switches.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/fms_switches.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/fms_switches.h .
+./fms_io_unstructured_file_unit.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_file_unit.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_file_unit.inc .
+./mpp_transmit_mpi.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_mpi.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_mpi.h .
+./register_unstructured_domain_restart_variable.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_unstructured_domain_restart_variable.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_unstructured_domain_restart_variable.inc .
+./mpp_group_update.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_group_update.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_group_update.h .
+./mpp_type_mpi.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_mpi.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_mpi.h .
+./mpp_do_global_field.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field.h .
+./constant.h: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/constant.h
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/constant.h .
+./mosaic.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic.F90 .
+./fms_io_unstructured_get_field_size.inc: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_field_size.inc
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_field_size.inc .
+./ensemble_manager.F90: /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/ensemble_manager.F90
+	cp /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/ensemble_manager.F90 .
+SRC = /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_input.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/ensemble_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/get_cal_time.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_parameter.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_spherical.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres_k.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/interpolator/interpolator.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_io_utils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/field_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/topography.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tridiagonal/tridiagonal.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_domains.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/affinity.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_utilities.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_conserve.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/block_control/block_control.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/mersennetwister.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_efp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/mosaic2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_data.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/time_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/xgrid.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_comm.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/data_override.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/fms_affinity.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/gaussian_topog.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memuse.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/random_numbers.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/memutils/memutils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_data.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memutils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/blackboxio.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_integral/diag_integral.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_axis.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_type.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/constants.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tracer_manager/tracer_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/quicksort.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/atmos_ocean_fluxes.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov_inter.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_output.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/cloud_interpolator.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/coupler_types.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/libFMS.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_core.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/column_diagnostics/column_diagnostics.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms2_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_table.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/get_grid_version.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/platform/platform.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/astronomy/astronomy.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_unstructured_domain_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/fmsconstants.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/grid.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_pset.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/stock_constants.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/fm_util.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_grid.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_domain_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/netcdf_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bilinear.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/grid2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_util.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bicubic.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/amip_interp/amip_interp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_reduce.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_field.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_ad.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_unit.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compute_global_checksum.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_read_data.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_2d.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_2Ddecomp.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_nocomm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_a.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_gather.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_reduce.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_push.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_define_nest_domains.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/gather_data_bc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_compressed.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_misc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_nest_domains.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_4d.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_unpack.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_group_update.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_unstructured_domain_restart_variable.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_file_unit.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_mpi.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/fms_switches.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_2Ddecomp.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_compute_k.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/constant.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_field_size.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_nonblock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_define.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_check.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_save_restart.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_int.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_setup_one_field.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_util.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_global_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_nocomm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/scatter_data_bc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_unlimited_axis.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_set_field.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/write_data.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_misc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils_char.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_scatter.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_3d.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_mpi.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_a.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_tl.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_domain.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/file_version.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_redistribute.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/parse.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_comm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_connect.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_domain_restart_variable.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_pass_data.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_field_exist.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_compressed.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_util.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_scalar.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_pack.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_global_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_axis.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_add_restart_variable.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_write_data.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_mpi.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_nonblock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_nocomm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ug.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/system_clock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_data_type_string.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_s.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_name.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nest.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_variable_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nonblock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_variable_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_checkV.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_s.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/fms_platform.h
+OBJ = horiz_interp.o drifters_input.o ensemble_manager.o get_cal_time.o mpp_parameter.o horiz_interp_spherical.o sat_vapor_pres_k.o mpp_io.o interpolator.o fms_io_utils.o field_manager.o topography.o tridiagonal.o time_interp.o mpp_domains.o read_mosaic.o affinity.o mpp_utilities.o horiz_interp_conserve.o block_control.o mersennetwister.o mpp_efp.o mosaic2.o mpp_data.o axis_utils2.o sat_vapor_pres.o time_manager.o xgrid.o mosaic.o axis_utils.o drifters_comm.o data_override.o fms_affinity.o time_interp_external2.o gaussian_topog.o mpp.o gradient_c2l.o create_xgrid.o mosaic_util.o mpp_memuse.o random_numbers.o memutils.o diag_data.o mpp_memutils.o blackboxio.o diag_integral.o diag_axis.o horiz_interp_type.o constants.o tracer_manager.o drifters.o quicksort.o atmos_ocean_fluxes.o fms_io.o monin_obukhov_inter.o diag_output.o drifters_io.o diag_manager.o cloud_interpolator.o coupler_types.o time_interp_external.o libFMS.o drifters_core.o column_diagnostics.o fms2_io.o diag_table.o get_grid_version.o platform.o astronomy.o fms_netcdf_unstructured_domain_io.o fms.o fmsconstants.o grid.o mpp_pset.o stock_constants.o interp.o fm_util.o diag_grid.o gradient.o fms_netcdf_domain_io.o netcdf_io.o monin_obukhov.o horiz_interp_bilinear.o grid2.o diag_util.o horiz_interp_bicubic.o amip_interp.o
+OFF = /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/column_diagnostics/column_diagnostics.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/create_xgrid.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/random_numbers.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_comm.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_mpi.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp_external.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils_char.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_misc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/gaussian_topog.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_utilities.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_parameter.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_pset.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_domains.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_core.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_comm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/get_grid_version.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/file_version.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_redistribute.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_grid.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_variable_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/fm_util.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/include/fms_platform.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/time_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_data_nocomm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_mpi.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_add_restart_variable.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_write_data.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_axis.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_name.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms2_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nest.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/topography/topography.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/amip_interp/amip_interp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/astronomy/astronomy.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/sat_vapor_pres/sat_vapor_pres_k.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/random_numbers/mersennetwister.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/affinity.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_define_nest_domains.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_push.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_manager/get_cal_time.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_misc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_compressed.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_type.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_unstructured_domain_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_field.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bicubic.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tridiagonal/tridiagonal.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_spherical.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/stock_constants.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compute_global_checksum.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_gather.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util_nocomm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_unstructured_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_2Ddecomp.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_check.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_setup_one_field.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_output.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_table.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_util.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_global_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_set_field.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/write_data.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_util.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_efp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_input.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_4d.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_nest_domains.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/netcdf_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_mpi.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/platform/platform.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_compute_k.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memuse.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_2Ddecomp.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/interpolator/interpolator.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_updateV_nonblock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_integral/diag_integral.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/drifters_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/field_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_pass_data.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/block_control/block_control.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_compressed.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_util.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic_util.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_field_exist.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/libFMS.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_data.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_global_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_scalar.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_pack.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_register_restart_axis.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/cloud_interpolator.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/grid2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/domain_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_scatter.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_3d.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_a.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/tracer_manager/tracer_manager.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_unstruct_domain.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov_inter.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_tl.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_bilinear.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/axis_utils/axis_utils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_util.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/field_manager/parse.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_io_connect.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_domain_restart_variable.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/read_mosaic.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_variable_attribute.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/memutils/memutils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_reduce_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_update_nonblock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_s.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_checkV.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_get_boundary.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/grid.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_update_domains2D_nonblock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/system_clock.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/atmos_ocean_fluxes.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_field_ug.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/exchange/xgrid.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum_ad.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient_c2l.c /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_a_s.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/data_override/data_override.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/get_data_type_string.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/constants.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_reduce.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_read_distributed_ascii.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_netcdf_domain_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/coupler_types.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_sum.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp_conserve.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/gather_data_bc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_alltoall_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_nocomm.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_sum_ad.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/diag_manager/diag_data.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/compressed_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/unstructured_domain_write.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/affinity/fms_affinity.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_global_reduce.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_file_unit.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/read_data_2d.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/netcdf_read_data.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/array_utils.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_error_s_a.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/fms_io_utils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/constants/fmsconstants.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_domains_define.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/interp.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/blackboxio.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_chksum_int.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_read.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/gradient.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_save_restart.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_memutils.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_comm_nocomm.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/quicksort.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_get_boundary.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/time_interp/time_interp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_write_unlimited_axis.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/scatter_data_bc.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic2/mosaic2.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/horiz_interp/horiz_interp.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/group_update_unpack.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/monin_obukhov/monin_obukhov.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/mpp_io.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/drifters/fms_switches.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_file_unit.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_transmit_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms2_io/include/register_unstructured_domain_restart_variable.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_group_update.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_type_mpi.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mpp/include/mpp_do_global_field.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/constant.h /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/mosaic/mosaic.F90 /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/fms/fms_io_unstructured_get_field_size.inc /home/alansheu2004/MOM6_OBGC_examples/builds/../src/FMS/coupler/ensemble_manager.F90
 clean: neat
 	-rm -f .libfms.a.cppdefs $(OBJ) libfms.a
 
