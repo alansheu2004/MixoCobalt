@@ -471,6 +471,38 @@ REGRID_FILTER_DEEP_DEPTH = 0.0  !   [m] default = 0.0
                                 ! REGRID_FILTER_SHALLOW_DEPTH the filter weights adopt a cubic profile.
 
 ! === module MOM_state_initialization ===
+INIT_LAYERS_FROM_Z_FILE = True  !   [Boolean] default = False
+                                ! If true, initialize the layer thicknesses, temperatures, and salinities from a
+                                ! Z-space file on a latitude-longitude grid.
+
+! === module MOM_initialize_layers_from_Z ===
+TEMP_SALT_Z_INIT_FILE = ""      ! default = "temp_salt_z.nc"
+                                ! The name of the z-space input file used to initialize temperatures (T) and
+                                ! salinities (S). If T and S are not in the same file, TEMP_Z_INIT_FILE and
+                                ! SALT_Z_INIT_FILE must be set.
+TEMP_Z_INIT_FILE = "woa13_decav_ptemp_monthly_fulldepth_01.nc" ! default = ""
+                                ! The name of the z-space input file used to initialize temperatures, only.
+SALT_Z_INIT_FILE = "woa13_decav_s_monthly_fulldepth_01.nc" ! default = ""
+                                ! The name of the z-space input file used to initialize temperatures, only.
+Z_INIT_FILE_PTEMP_VAR = "ptemp_an" ! default = "ptemp"
+                                ! The name of the potential temperature variable in TEMP_Z_INIT_FILE.
+Z_INIT_FILE_SALT_VAR = "s_an"   ! default = "salt"
+                                ! The name of the salinity variable in SALT_Z_INIT_FILE.
+Z_INIT_HOMOGENIZE = True        !   [Boolean] default = False
+                                ! If True, then horizontally homogenize the interpolated initial conditions.
+Z_INIT_ALE_REMAPPING = True     !   [Boolean] default = False
+                                ! If True, then remap straight to model coordinate from file.
+Z_INIT_REMAPPING_SCHEME = "PPM_IH4" ! default = "PPM_IH4"
+                                ! The remapping scheme to use if using Z_INIT_ALE_REMAPPING is True.
+Z_INIT_REMAP_GENERAL = False    !   [Boolean] default = False
+                                ! If false, only initializes to z* coordinates. If true, allows initialization
+                                ! directly to general coordinates.
+Z_INIT_REMAP_FULL_COLUMN = False !   [Boolean] default = False
+                                ! If false, only reconstructs profiles for valid data points. If true, inserts
+                                ! vanished layers below the valid data.
+Z_INIT_REMAP_OLD_ALG = True     !   [Boolean] default = False
+                                ! If false, uses the preferred remapping algorithm for initialization. If true,
+                                ! use an older, less robust algorithm for remapping.
 TEMP_SALT_INIT_VERTICAL_REMAP_ONLY = False !   [Boolean] default = False
                                 ! If true, initial conditions are on the model horizontal grid. Extrapolation
                                 ! over missing ocean values is done using an ICE-9 procedure with vertical ALE
@@ -479,6 +511,32 @@ HOR_REGRID_2018_ANSWERS = False !   [Boolean] default = False
                                 ! If true, use the order of arithmetic for horizonal regridding that recovers
                                 ! the answers from the end of 2018.  Otherwise, use rotationally symmetric forms
                                 ! of the same expressions.
+VELOCITY_CONFIG = "zero"        ! default = "zero"
+                                ! A string that determines how the initial velocities are specified for a new
+                                ! run:
+                                !     file - read velocities from the file specified
+                                !       by (VELOCITY_FILE).
+                                !     zero - the fluid is initially at rest.
+                                !     uniform - the flow is uniform (determined by
+                                !       parameters INITIAL_U_CONST and INITIAL_V_CONST).
+                                !     rossby_front - a mixed layer front in thermal wind balance.
+                                !     soliton - Equatorial Rossby soliton.
+                                !     USER - call a user modified routine.
+CONVERT_THICKNESS_UNITS = False !   [Boolean] default = False
+                                ! If true,  convert the thickness initial conditions from units of m to kg m-2
+                                ! or vice versa, depending on whether BOUSSINESQ is defined. This does not apply
+                                ! if a restart file is read.
+DEPRESS_INITIAL_SURFACE = False !   [Boolean] default = False
+                                ! If true,  depress the initial surface to avoid huge tsunamis when a large
+                                ! surface pressure is applied.
+TRIM_IC_FOR_P_SURF = False      !   [Boolean] default = False
+                                ! If true, cuts way the top of the column for initial conditions at the depth
+                                ! where the hydrostatic pressure matches the imposed surface pressure which is
+                                ! read from file.
+REGRID_ACCELERATE_INIT = False  !   [Boolean] default = False
+                                ! If true, runs REGRID_ACCELERATE_ITERATIONS iterations of the regridding
+                                ! algorithm to push the initial grid to be consistent with the initial
+                                ! condition. Useful only for state-based and iterative coordinates.
 ODA_INCUPD = False              !   [Boolean] default = False
                                 ! If true, oda incremental updates will be applied everywhere in the domain.
 SPONGE = False                  !   [Boolean] default = False
@@ -1620,13 +1678,13 @@ MAX_P_SURF = 0.0                !   [Pa] default = -1.0
                                 ! structure does not limit the water that can be frozen out of the ocean and the
                                 ! ice-ocean heat fluxes are treated explicitly.  No limit is applied if a
                                 ! negative value is used.
-RESTORE_SALINITY = False        !   [Boolean] default = False
+RESTORE_SALINITY = True         !   [Boolean] default = False
                                 ! If true, the coupled driver will add a globally-balanced fresh-water flux that
                                 ! drives sea-surface salinity toward specified values.
 RESTORE_TEMPERATURE = False     !   [Boolean] default = False
                                 ! If true, the coupled driver will add a  heat flux that drives sea-surface
                                 ! temperature toward specified values.
-ADJUST_NET_SRESTORE_TO_ZERO = False !   [Boolean] default = False
+ADJUST_NET_SRESTORE_TO_ZERO = True !   [Boolean] default = True
                                 ! If true, adjusts the salinity restoring seen to zero whether restoring is via
                                 ! a salt flux or virtual precip.
 ADJUST_NET_SRESTORE_BY_SCALING = False !   [Boolean] default = False
@@ -1657,6 +1715,32 @@ WIND_STAGGER = "C"              ! default = "C"
 WIND_STRESS_MULTIPLIER = 1.0    !   [nondim] default = 1.0
                                 ! A factor multiplying the wind-stress given to the ocean by the coupler. This
                                 ! is used for testing and should be =1.0 for any production runs.
+FLUXCONST = 0.1667              !   [m day-1] default = 0.0
+                                ! The constant that relates the restoring surface fluxes to the relative surface
+                                ! anomalies (akin to a piston velocity).  Note the non-MKS units.
+FLUXCONST_SALT = 0.1667         !   [m day-1] default = 0.1667
+                                ! The constant that relates the restoring surface salt fluxes to the relative
+                                ! surface anomalies (akin to a piston velocity).  Note the non-MKS units.
+SALT_RESTORE_FILE = "salt_restore_PHC2.720x576.v20180405.nc" ! default = "salt_restore.nc"
+                                ! A file in which to find the surface salinity to use for restoring.
+SALT_RESTORE_VARIABLE = "salt"  ! default = "salt"
+                                ! The name of the surface salinity variable to read from SALT_RESTORE_FILE for
+                                ! restoring salinity.
+SRESTORE_AS_SFLUX = True        !   [Boolean] default = False
+                                ! If true, the restoring of salinity is applied as a salt flux instead of as a
+                                ! freshwater flux.
+MAX_DELTA_SRESTORE = 5.0        !   [PSU or g kg-1] default = 999.0
+                                ! The maximum salinity difference used in restoring terms.
+MASK_SRESTORE_UNDER_ICE = False !   [Boolean] default = False
+                                ! If true, disables SSS restoring under sea-ice based on a frazil criteria
+                                ! (SST<=Tf). Only used when RESTORE_SALINITY is True.
+MASK_SRESTORE_MARGINAL_SEAS = False !   [Boolean] default = False
+                                ! If true, disable SSS restoring in marginal seas. Only used when
+                                ! RESTORE_SALINITY is True.
+BASIN_FILE = "basin.nc"         ! default = "basin.nc"
+                                ! A file in which to find the basin masks, in variable 'basin'.
+MASK_SRESTORE = False           !   [Boolean] default = False
+                                ! If true, read a file (salt_restore_mask) containing a mask for SSS restoring.
 CD_TIDES = 0.0018               !   [nondim] default = 1.0E-04
                                 ! The drag coefficient that applies to the tides.
 READ_TIDEAMP = False            !   [Boolean] default = False
@@ -1686,28 +1770,3 @@ SEA_ICE_VISCOSITY = 1.0E+09     !   [m2 s-1] default = 1.0E+09
                                 ! the rigidity of sea ice.
 SEA_ICE_RIGID_MASS = 100.0      !   [kg m-2] default = 1000.0
                                 ! The mass of sea-ice per unit area at which the sea-ice starts to exhibit
-                                ! rigidity
-ALLOW_ICEBERG_FLUX_DIAGNOSTICS = False !   [Boolean] default = False
-                                ! If true, makes available diagnostics of fluxes from icebergs as seen by MOM6.
-ALLOW_FLUX_ADJUSTMENTS = False  !   [Boolean] default = False
-                                ! If true, allows flux adjustments to specified via the data_table using the
-                                ! component name 'OCN'.
-
-! === module MOM_restart ===
-USE_WAVES = False               !   [Boolean] default = False
-                                ! If true, enables surface wave modules.
-LA_DEPTH_RATIO = 0.04           !   [nondim] default = 0.04
-                                ! The depth (normalized by BLD) to average Stokes drift over in Langmuir number
-                                ! calculation, where La = sqrt(ust/Stokes).
-
-! === module MOM_file_parser ===
-SEND_LOG_TO_STDOUT = False      !   [Boolean] default = False
-                                ! If true, all log messages are also sent to stdout.
-DOCUMENT_FILE = "MOM_parameter_doc" ! default = "MOM_parameter_doc"
-                                ! The basename for files where run-time parameters, their settings, units and
-                                ! defaults are documented. Blank will disable all parameter documentation.
-COMPLETE_DOCUMENTATION = True   !   [Boolean] default = True
-                                ! If true, all run-time parameters are documented in MOM_parameter_doc.all .
-MINIMAL_DOCUMENTATION = True    !   [Boolean] default = True
-                                ! If true, non-default run-time parameters are documented in
-                                ! MOM_parameter_doc.short .
