@@ -7948,37 +7948,37 @@
     ! units: dimensionless
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {agg_lim_Sm,agg_lim_Sm_xyave}
-"jvirloss_n_Di"  [Unused]
+"jvirloss_n_Di"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Diazotroph nitrogen loss to viruses layer integral
     ! units: mol N m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jvirloss_n_Di,jvirloss_n_Di_xyave}
-"jvirloss_n_Lg"  [Unused]
+"jvirloss_n_Lg"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Large phyto nitrogen loss to viruses layer integral
     ! units: mol N m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jvirloss_n_Lg,jvirloss_n_Lg_xyave}
-"jvirloss_n_Sm"  [Unused]
+"jvirloss_n_Sm"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Small phyto nitrogen loss to viruses layer integral
     ! units: mol N m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jvirloss_n_Sm,jvirloss_n_Sm_xyave}
-"jexuloss_n_Di"  [Unused]
+"jexuloss_n_Di"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Diazotroph nitrogen loss via exudation
     ! units: mol N m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jexuloss_n_Di,jexuloss_n_Di_xyave}
-"jexuloss_n_Lg"  [Unused]
+"jexuloss_n_Lg"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Large phyto nitrogen loss via exudation
     ! units: mol N m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jexuloss_n_Lg,jexuloss_n_Lg_xyave}
-"jexuloss_n_Sm"  [Unused]
+"jexuloss_n_Sm"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Small phyto nitrogen loss via exudation
     ! units: mol N m-2 s-1
@@ -8182,13 +8182,13 @@
     ! units: dimensionless
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {agg_lim_Mx,agg_lim_Mx_xyave}
-"jvirloss_n_Mx"  [Unused]
+"jvirloss_n_Mx"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Mixotroph nitrogen loss to viruses layer integral
     ! units: mol N m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jvirloss_n_Mx,jvirloss_n_Mx_xyave}
-"jexuloss_n_Mx"  [Unused]
+"jexuloss_n_Mx"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Mixotroph nitrogen loss via exudation
     ! units: mol N m-2 s-1
@@ -8254,7 +8254,7 @@
     ! units: mol Fe m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jprod_fedet_Mx,jprod_fedet_Mx_xyave}
-"jprod_ldon_Mx"  [Unused]
+"jprod_ldon_Mx"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Production of labile dissolved organic nitrogen by mixotrophs, layer integral
     ! units: mol N m-2 s-1
@@ -8344,18 +8344,30 @@
     ! units: mol m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jprod_nmx_auto_spec,jprod_nmx_auto_spec_xyave}
-"jprod_nmx_hetero_spec"  [Used]
+"jresp_nmx_auto"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
-    ! long_name: Mixotroph Specialized Secondary Nitrogen production layer integral
+    ! long_name: Mixotroph Primary Nitrogen respiration layer integral
     ! units: mol m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
-    ! variants: {jprod_nmx_hetero_spec,jprod_nmx_hetero_spec_xyave}
+    ! variants: {jresp_nmx_auto,jresp_nmx_auto_xyave}
 "jprod_nmx_hetero"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Secondary Production of new biomass (nitrogen) by mixotrophs, layer integral
     ! units: mol N m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jprod_nmx_hetero,jprod_nmx_hetero_xyave}
+"jprod_nmx_hetero_spec"  [Used]
+    ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
+    ! long_name: Mixotroph Specialized Secondary Nitrogen production layer integral
+    ! units: mol m-2 s-1
+    ! cell_methods: xh:mean yh:mean zl:mean area:mean
+    ! variants: {jprod_nmx_hetero_spec,jprod_nmx_hetero_spec_xyave}
+"jresp_nmx_hetero"  [Used]
+    ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
+    ! long_name: Secondary Respiration Loss of biomass (nitrogen) by mixotrophs, layer integral
+    ! units: mol N m-2 s-1
+    ! cell_methods: xh:mean yh:mean zl:mean area:mean
+    ! variants: {jresp_nmx_hetero,jresp_nmx_hetero_xyave}
 "o2lim_Mx"  [Unused]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Oxygen limitation of mixotrophs
@@ -8566,19 +8578,19 @@
     ! units: mol Fe m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jprod_fedet_Lgz,jprod_fedet_Lgz_xyave}
-"jprod_ldon_Smz"  [Unused]
+"jprod_ldon_Smz"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Production of labile dissolved organic nitrogen by small zooplankton, layer integral
     ! units: mol N m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jprod_ldon_Smz,jprod_ldon_Smz_xyave}
-"jprod_ldon_Mdz"  [Unused]
+"jprod_ldon_Mdz"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Production of labile dissolved organic nitrogen by medium zooplankton, layer integral
     ! units: mol N m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jprod_ldon_Mdz,jprod_ldon_Mdz_xyave}
-"jprod_ldon_Lgz"  [Unused]
+"jprod_ldon_Lgz"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Production of labile dissolved organic nitrogen by large zooplankton, layer integral
     ! units: mol N m-2 s-1
@@ -8788,13 +8800,13 @@
     ! units: mol N m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jzloss_n_Bact,jzloss_n_Bact_xyave}
-"jvirloss_n_Bact"  [Unused]
+"jvirloss_n_Bact"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Bacterial nitrogen loss to viruses layer integral
     ! units: mol N m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jvirloss_n_Bact,jvirloss_n_Bact_xyave}
-"juptake_ldon"  [Unused]
+"juptake_ldon"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Bacterial uptake of labile dissolved organic nitrogen
     ! units: mol N m-2 s-1
@@ -8914,7 +8926,7 @@
     ! units: mol P m-2 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jprod_pdet,jprod_pdet_xyave}
-"jprod_ldon"  [Unused]
+"jprod_ldon"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: labile dissolved organic nitrogen production layer integral
     ! units: mol N m-2 s-1
@@ -9491,17 +9503,17 @@
     ! long_name: Surface Dissolved Iron
     ! units: mol kg-1
     ! cell_methods: xh:mean yh:mean area:mean
-"sfc_ldon"  [Unused]
+"sfc_ldon"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_d2}
     ! long_name: Surface Labile Dissolved Organic Nitrogen
     ! units: mol kg-1
     ! cell_methods: xh:mean yh:mean area:mean
-"sfc_sldon"  [Unused]
+"sfc_sldon"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_d2}
     ! long_name: Surface semi-labile Dissolved Organic Nitrogen
     ! units: mol kg-1
     ! cell_methods: xh:mean yh:mean area:mean
-"sfc_srdon"  [Unused]
+"sfc_srdon"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_d2}
     ! long_name: Surface semi-refractory Dissolved Organic Nitrogen
     ! units: mol kg-1
@@ -10001,7 +10013,7 @@
     ! long_name: Large zooplankton nitrogen remineralization integral in upper 100m
     ! units: mol m-2 s-1
     ! cell_methods: xh:mean yh:mean area:mean
-"jprod_nmx_100"  [Unused]
+"jprod_nmx_auto_100"  [Unused]
     ! modules: {generic_cobalt,generic_cobalt_d2}
     ! long_name: Mixotroph nitrogen prim. prod. integral in upper 100m
     ! units: mol m-2 s-1
@@ -10031,7 +10043,7 @@
     ! long_name: Mixotroph nitrogen exudation loss integral in upper 100m
     ! units: mol m-2 s-1
     ! cell_methods: xh:mean yh:mean area:mean
-"jprod_nmx_100"  [Unused]
+"jprod_nmx_hetero_100"  [Unused]
     ! modules: {generic_cobalt,generic_cobalt_d2}
     ! long_name: Mixotroph secondary nitrogen prod. integral in upper 100m
     ! units: mol m-2 s-1
@@ -10576,7 +10588,7 @@
     ! units: mol m-3
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {si_raw,si_raw_xyave,si,si_xyave}
-"chl_raw"  [Unused] (CMOR equivalent is "chl_cmip")
+"chl_raw"  [Used] (CMOR equivalent is "chl_cmip")
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Mass Concentration of Total Phytoplankton expressed as Chlorophyll in sea water
     ! units: kg m-3
@@ -11374,7 +11386,7 @@
     ! units: mol m-2 s-1
     ! cell_methods: xh:mean yh:mean area:mean
     ! variants: {intparag_raw,intparag}
-"epc100_raw"  [Unused] (CMOR equivalent is "epc100")
+"epc100_raw"  [Used] (CMOR equivalent is "epc100")
     ! modules: {generic_cobalt,generic_cobalt_d2}
     ! long_name: Downward Flux of Particulate Organic Carbon
     ! units: mol m-2 s-1
@@ -11668,7 +11680,7 @@
     ! units: mol m-3 s-1
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jingest_mx_n_bact,jingest_mx_n_bact_xyave}
-"jingest_smz_n_bact"  [Unused]
+"jingest_smz_n_bact"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Sm. Zooplankton Consumption of Bacteria
     ! units: mol m-3 s-1
@@ -11683,7 +11695,7 @@
 "jingest_smz_n_sm"  [Used]
     ! modules: {generic_cobalt,generic_cobalt_z,generic_cobalt_zsfc,generic_cobalt_d2,generic_cobalt_z_d2,generic_cobalt_zsfc_d2}
     ! long_name: Sm. Zooplankton Consumption of Sm. Phytoplankton
-    ! units: mol m-3 s-1
+    ! units: c
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {jingest_smz_n_sm,jingest_smz_n_sm_xyave}
 "psi_mx"  [Used]
@@ -12144,3 +12156,102 @@
     ! long_name: Area integrated latent heat flux due to melting icebergs
     ! units: W
     ! variants: {total_lat_frunoff,total_hfibthermds}
+"total_sens"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Area integrated downward sensible heat flux
+    ! units: W
+    ! variants: {total_sens,total_hfsso}
+"total_heat_adjustment"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Area integrated surface heat flux from restoring and/or flux adjustment
+    ! units: W
+"total_seaice_melt_heat"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Area integrated surface heat flux from snow and sea ice melt
+    ! units: W
+"net_heat_coupler_ga"  [Used]
+    ! modules: ocean_model
+    ! long_name: Area averaged surface heat flux from SW+LW+latent+sensible+seaice_melt_heat (via the coupler)
+    ! units: W m-2
+"net_heat_surface_ga"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Area averaged surface heat flux from SW+LW+lat+sens+mass+frazil+restore+seaice_melt_heat or flux adjustments
+    ! units: W m-2
+    ! variants: {net_heat_surface_ga,ave_hfds}
+"sw_ga"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Area averaged net downward shortwave at sea water surface
+    ! units: W m-2
+    ! variants: {sw_ga,ave_rsntds}
+"LwLatSens_ga"  [Used]
+    ! modules: ocean_model
+    ! long_name: Area averaged longwave+latent+sensible heating
+    ! units: W m-2
+"lw_ga"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Area averaged net downward longwave at sea water surface
+    ! units: W m-2
+    ! variants: {lw_ga,ave_rlntds}
+"lat_ga"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Area averaged surface downward latent heat flux
+    ! units: W m-2
+    ! variants: {lat_ga,ave_hflso}
+"sens_ga"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Area averaged downward sensible heat flux
+    ! units: W m-2
+    ! variants: {sens_ga,ave_hfsso}
+"salt_flux"  [Unused] (CMOR equivalent is "sfdsi")
+    ! modules: {ocean_model,ocean_model_d2}
+    ! long_name: Net salt flux into ocean at surface (restoring + sea-ice)
+    ! units: kg m-2 s-1
+    ! cell_methods: xh:mean yh:mean area:mean
+    ! variants: {salt_flux,sfdsi}
+"salt_flux_in"  [Unused]
+    ! modules: {ocean_model,ocean_model_d2}
+    ! long_name: Salt flux into ocean at surface from coupler
+    ! units: kg m-2 s-1
+    ! cell_methods: xh:mean yh:mean area:mean
+"salt_flux_added"  [Unused]
+    ! modules: {ocean_model,ocean_model_d2}
+    ! long_name: Salt flux into ocean at surface due to restoring or flux adjustment
+    ! units: kg m-2 s-1
+    ! cell_methods: xh:mean yh:mean area:mean
+"salt_flux_global_restoring_adjustment"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Adjustment needed to balance net global salt flux into ocean at surface
+    ! units: kg m-2 s-1
+"vprec_global_adjustment"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Adjustment needed to adjust net vprec into ocean to zero
+    ! units: kg m-2 s-1
+"net_fresh_water_global_adjustment"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Adjustment needed to adjust net fresh water into ocean to zero
+    ! units: kg m-2 s-1
+"salt_flux_global_restoring_scaling"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Scaling applied to balance net global salt flux into ocean at surface
+    ! units: nondim
+"vprec_global_scaling"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Scaling applied to adjust net vprec into ocean to zero
+    ! units: nondim
+"net_fresh_water_global_scaling"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Scaling applied to adjust net fresh water into ocean to zero
+    ! units: nondim
+"total_salt_flux"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Area integrated surface salt flux
+    ! units: kg s-1
+    ! variants: {total_salt_flux,total_sfdsi}
+"total_salt_Flux_In"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Area integrated surface salt flux at surface from coupler
+    ! units: kg s-1
+"total_salt_Flux_Added"  [Unused]
+    ! modules: ocean_model
+    ! long_name: Area integrated surface salt flux due to restoring or flux adjustment
+    ! units: kg s-1

@@ -12,5 +12,5 @@ fi
 
 mkdir /mnt/c/Users/me123/Documents/Research/CobaltRuns/data/$1/
 cp ~/MOM6_OBGC_examples/exps/OM4.single_column.COBALT/*.nc /mnt/c/Users/me123/Documents/Research/CobaltRuns/data/$1/
-
+cp ~/MOM6_OBGC_examples/exps/OM4.single_column.COBALT/stdout.win11.gnu.prod.n1 /mnt/c/Users/me123/Documents/Research/CobaltRuns/data/$1/
 
